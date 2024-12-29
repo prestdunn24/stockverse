@@ -55,8 +55,8 @@ const  TOPSTOCKS = () => {
                     name="description"
                     content="Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments."
                 />
-                <meta property="og:title" content="Cadrenal Therapeutics Press Release - Stockverse" />
-                <meta property="og:description" content="Discover Cadrenal Therapeutics' latest news and updates on cardiovascular innovations. Read more on Stockverse." />
+                <meta property="og:title" content="Top 10 Stocks to Buy Now for January 2025 - Stockverse" />
+                <meta property="og:description" content="Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments." />
                 <meta property="og:url" content={pressReleaseUrl} />
                 <meta property="og:image" content="/path/to/image.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
