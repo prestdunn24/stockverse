@@ -57,7 +57,7 @@ const Noev = () => {
                 <div className="flex flex-col">
                     <p className="text-base text-primaryText leading-[110%]">News Provided by</p>
                     <Link href='https://stockverse.com/news' className=" leading-[110%] text-md  text-primaryHeading">Stockverse.com</Link>
-                    <p className="text-sm  text-primaryText leading-[110%]">Nov 13, 2024, 08:30 ET</p>
+                    {/* <p className="text-sm  text-primaryText leading-[110%]">Nov 13, 2024, 08:30 ET</p> */}
                 </div>
                 <div className="">
                     <p className="text-base  text-primaryText leading-[110%]">SHARE THIS ARTICLE</p>
