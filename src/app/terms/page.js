@@ -1,7 +1,19 @@
+import Headtag from "@/components/headtag";
 
 export default function Terms() {
+
+  const meta = {
+    title : "Terms of Service - Stockverse",
+    description : "Review Stockverse's Terms of Service. Learn about your rights, responsibilities, account security, subscription details and more while using the platform.",
+    og_title : " ",
+    og_description : " ",
+    og_url : " ",
+    og_img : " "
+};
+
   return (
     <div className="hero py-16 max-md:py-6 w-full">
+      <Headtag {...meta} />
       <div className="px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-start">
         <h1 className="text-3xl font-sansSemibold text-primaryText">Stockverse Terms of Service</h1>
         <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">1. Acceptance of Terms</h2>

@@ -3,12 +3,22 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Link from "next/link";
 import axios from 'axios';
+import Headtag from "@/components/headtag";
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
 export default function Membership() {
   const [billingCycle, setBillingCycle] = useState("monthly");
   const router = useRouter();
+
+  const meta = {
+    title : "Pricing Plans - Stockverse",
+    description : "Our pricing plans for everyone. Access real-time data, personalized stock alerts and valuable insights to help you make informed investment decisions.",
+    og_title : " ",
+    og_description : " ",
+    og_url : " ",
+    og_img : " "
+};
 
   const plans = {
     monthly: {
@@ -40,6 +50,7 @@ export default function Membership() {
 
   return (
     <div className="w-full h-full">
+      <Headtag {...meta}/>
       <div className="hero pt-[10rem] max-sm:pt-[6rem] w-full min-h-[750px] bg-membershipBg bg-no-repeat bg-[length:100%_100%] mb-[-300px] max-md:mb-[-380px]">
         <div className="px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-center">
           <h1 className="w-[70%] max-2xl:w-[80%] font-sansBold max-sm:w-[100%] text-[70px] max-xl:text-[5.2vw] max-sm:text-[7vw] leading-[120%] font-bold text-secondaryHeading text-center">

@@ -2,10 +2,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from 'next/head';
+import Headtag from "@/components/headtag";
 
 const  TOPSTOCKS = () => {
 
-    const pressReleaseUrl = `http://localhost:3000/top-10-stocks-to-buy`; // The current URL
+    const pressReleaseUrl = `http://localhost:3000/top-10-stocks-to-buy`; 
+
+    const meta = {
+        title : "Top 10 Stocks to Buy Now for January 2025",
+        description : "Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments.",
+        og_title : "Top 10 Stocks to Buy Now for January 2025 - Stockverse",
+        og_description: "Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments.",
+        og_url: `${pressReleaseUrl}`,
+        og_img: "/path/to/image.jpg"
+    };
+
+
+    // The current URL
 
     const handleFacebookShare = () => {
         const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pressReleaseUrl)}`;
@@ -49,18 +62,7 @@ const  TOPSTOCKS = () => {
     return (
         <div className="w-full h-full mx-auto xl:container lg:px-[15%] max-xl:px-3">
             {/* Custom metadata for this page */}
-            <Head>
-                <title>Top 10 Stocks to Buy Now for January 2025</title>
-                <meta
-                    name="description"
-                    content="Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments."
-                />
-                <meta property="og:title" content="Top 10 Stocks to Buy Now for January 2025 - Stockverse" />
-                <meta property="og:description" content="Looking for the latest stock opportunities in January 2025? Click here to see top picks that could be great additions to your investments." />
-                <meta property="og:url" content={pressReleaseUrl} />
-                <meta property="og:image" content="/path/to/image.jpg" />
-                <meta name="twitter:card" content="summary_large_image" />
-            </Head>
+            <Headtag {...meta} />
             
             <div className="py-12 gap-y-6 flex max-lg:flex-col-reverse max-lg:items-start items-center justify-between">
                 <h1 className="text-4xl font-serif max-sm:text-2xl  text-left text-primaryText/70 lg:w-[70%] leading-[140%]">Top 10 Stocks to Buy Now for January 2025</h1>
@@ -235,12 +237,12 @@ const  TOPSTOCKS = () => {
                 <div className="w-full border-t-2 border-buy py-4">
                 <h1 className="text-primaryText mb-4 text-center font-sansSemibold text-2xl">Disclaimer</h1>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                        *Ownership and Operation:*
+                       {` *Ownership and Operation:*
                         This website/newsletter is owned, operated, and edited by Relqo Media LLC. Any wording found in this email or disclaimer referencing "I," "we," "our," or "Relqo Media" refers to Relqo Media LLC. This webpage/newsletter is a paid advertisement, not a recommendation or an offer to buy or sell securities. Our business model is to be financially compensated to market and promote small public companies. By reading our newsletter and our website, you agree to the terms of our disclaimer, which are subject to change at any time.
                         We are not registered or licensed in any jurisdiction to provide investing advice or any advisory or consultancy services, and are therefore unqualified to give investment recommendations. Always conduct your own research and consult with a licensed investment professional before investing. This communication is never to be used as the basis for making investment decisions and is for entertainment purposes only. At most, this communication should serve as a starting point to conduct your own research and consult with a licensed professional regarding the companies profiled and discussed.
                         Conduct your own research. Companies with a low price per share are speculative and carry a high degree of risk, so only invest what you can afford to lose. By using our service, you agree not to hold our site, its editors, owners, or staff liable for any damages, financial or otherwise, that may occur due to any action you may take based on the information contained within our newsletters or on our website.
                         We do not advise any reader to take any specific action. Losses can be larger than expected if the company experiences issues with liquidity or wide spreads. Our website and newsletter are for entertainment purposes only. Never invest purely based on our alerts. Gains mentioned in our newsletter and on our website may be based on end-of-day or intraday data.
-                        This publication, its owners, and affiliates may hold positions in the securities mentioned in our alerts, which we may sell at any time without notice to our subscribers, potentially impacting share prices. If we own any shares, we will list the relevant stock information and the number of shares here. Relqo Media LLC's business model is to receive financial compensation to promote public companies.
+                        This publication, its owners, and affiliates may hold positions in the securities mentioned in our alerts, which we may sell at any time without notice to our subscribers, potentially impacting share prices. If we own any shares, we will list the relevant stock information and the number of shares here. Relqo Media LLC's business model is to receive financial compensation to promote public companies.`}
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
                     *Purpose:* These websites and social media accounts, and the content provided therein, are for informational and entertainment purposes only. We are in the business of marketing, advertising, and bringing brand awareness to small public companies. The content on these platforms is a paid advertisement and should not be interpreted as a recommendation or offer to buy or sell securities. 
@@ -265,7 +267,7 @@ const  TOPSTOCKS = () => {
                     Our emails may contain forward-looking statements, which are not guaranteed to materialize due to a variety of factors. We do not guarantee the timeliness, accuracy, or completeness of the information on our site or in our newsletters. The information in our email newsletters and on our website is believed to be accurate and correct but has not been independently verified and is not guaranteed.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                    The information is collected from public sources, such as the profiled company’s website and press releases, but is not researched or verified in any way to ensure its accuracy. Furthermore, Relqo Media often employs independent contractor writers who may make errors when researching information and preparing these communications regarding profiled companies. While independent writers' works are reviewed and edited before publication, errors or omissions may occur. You should assume all information in our communications is incorrect until you verify it yourself and are encouraged never to invest based solely on the information contained in our communications
+                    {`The information is collected from public sources, such as the profiled company’s website and press releases, but is not researched or verified in any way to ensure its accuracy. Furthermore, Relqo Media often employs independent contractor writers who may make errors when researching information and preparing these communications regarding profiled companies. While independent writers' works are reviewed and edited before publication, errors or omissions may occur. You should assume all information in our communications is incorrect until you verify it yourself and are encouraged never to invest based solely on the information contained in our communications`}
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
                     The information in this disclaimer is subject to change at any time without notice.

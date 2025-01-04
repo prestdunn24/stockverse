@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Cookies from 'js-cookie';
 import Link from 'next/link';
 import Image from 'next/image';
+import Headtag from '@/components/headtag';
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
@@ -19,6 +20,11 @@ export default function LogIn() {
   const [VerifyOTP, setVerifyOTP] = useState(false);
   const [id, setid] = useState(null);
   const router = useRouter();
+
+  const meta = {
+    title : "Live Stock Data, Stock Market & Finance News - Stockverse",
+    description : "Discover real-time stock data, expert analysis, market insights, live updates, IPO calendars and tools on Stockverse to make informed investment decisions.",
+};
 
   useEffect(() => {
     const token = Cookies.get('authToken');
@@ -111,6 +117,7 @@ export default function LogIn() {
 
   return (
     <div className="max-lg:pt-16 pb-[19vh] max-md:pt-12 w-full bg-loginBg bg-no-repeat bg-cover bg-left-bottom mb-[-20px]">
+      <Headtag {...meta} />
       
       <div className={` ${VerifyOTP ? 'hidden' : 'flex'} px-6 max-sm:px-3 lg:min-h-[90vh] mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-center justify-center`}>
         <h1 className="text-6xl max-md:text-4xl font-sansSemibold text-secondaryHeading">Log In</h1>

@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import Script from 'next/script';
 import { usePathname } from 'next/navigation';
 import { MembershipProvider } from '../context/MembershipContext';
+import Head from 'next/head';
 
 export default function RootLayout({ children }) {
 
@@ -23,12 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="description" content="Discover real-time stock data, expert financial analysis, and market insights on Stockverse. Stay ahead of the market with live updates, in-depth stock news, IPO calendars, and personalized tools to help you make informed investment decisions." />
-        <link rel="icon" href="/favicon.png" size="92*92" />
-        <title>Stockverse</title>
-        
-        {/* <!-- Google Tag Manager --> */}
-        <Script id="gtm-head" strategy="afterInteractive">
+      <Script id="gtm-head" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

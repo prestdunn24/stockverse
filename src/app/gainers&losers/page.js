@@ -1,8 +1,19 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Gainers_Losers from "@/components/Gainers_Losers";
+import Headtag from '@/components/headtag';
 
 export default function GainersLosersPage() {
+
+    const meta = {
+        title : "Stock Market Movers - Gainers, Losers & Active Stocks - Stockverse",
+        description : "Track top stock market movers. Explore gainers, losers and active stocks with real-time data, detailed insights, and expert analysis",
+        og_title : " ",
+        og_description : " ",
+        og_url : " ",
+        og_img : " "
+    };
+
     // Initialize the filter state with null to wait for sessionStorage check
     const [filter, setFilter] = useState(null);
 
@@ -35,6 +46,7 @@ export default function GainersLosersPage() {
 
     return (
         <section className="w-full">
+            <Headtag {...meta}/>
             <div className="py-16 max-sm:py-10 w-full bg-newsBg bg-no-repeat bg-cover bg-right-bottom">
                 <div className="lg:pr-[25%] max-md:py-0 py-10 px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-start">
                 <h1 className="text-secondaryHeading max-sm:text-3xl text-4xl font-sansSemibold"><span className="text-article">Market Movers:</span> Gainers, Losers & Actives Stocks</h1>

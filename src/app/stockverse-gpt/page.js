@@ -8,6 +8,7 @@ import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import axios from 'axios';
 import User from '@/components/User';
 import ThemeSwitch from '@/components/ThemeSwitch';
+import Headtag from '@/components/headtag';
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
@@ -29,6 +30,12 @@ export default function Stockverse_GPT() {
     const [sidebarHide, setSidebarHide] = useState(false);
     const [favouriteStatus, setFavouriteStatus] = useState({}); // Track favorite status for each chat
     const [isChatEmpty, setIsChatEmpty] = useState(true);
+
+
+    const meta = {
+        title : "Live Stock Data, Stock Market & Finance News - Stockverse",
+        description : "Discover real-time stock data, expert analysis, market insights, live updates, IPO calendars and tools on Stockverse to make informed investment decisions.",
+    };
 
     useEffect(() => {
         setIsChatEmpty(chatCanvas.length === 0 ? true : false);
@@ -446,6 +453,7 @@ export default function Stockverse_GPT() {
 
     return (
         <section className="flex items-start h-[100dvh] overflow-hidden relative scrollbar-hide">
+            <Headtag {...meta} />
             {/* side bar start */}
             {/* web view side bar */}
             <div style={{ width: sidebarHide ? '0' : '18rem', transition: 'width 300ms ease-in-out',}} 

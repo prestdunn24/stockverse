@@ -1,8 +1,20 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import IPO from '@/components/Ipo_Status';
+import Headtag from '@/components/headtag';
 
 export default function Ipo_Calendar () {
+
+    const meta = {
+        title : "IPO Calendar - Upcoming, Listed, and Delisted Stocks - Stockverse",
+        description : "Explore IPO calendar on Stockverse. Stay updated on upcoming, listed and delisted stocks with detailed insights and real-time market updates.",
+        og_title : " ",
+        og_description : " ",
+        og_url : " ",
+        og_img : " "
+    };
+
+
     // Initialize the filter state with null to wait for sessionStorage check
     const [filter, setFilter] = useState(null);
 
@@ -35,6 +47,7 @@ export default function Ipo_Calendar () {
 
     return (
         <section className="w-full">
+            <Headtag {...meta}/>
             <div className="py-16 max-sm:py-10 w-full bg-newsBg bg-no-repeat bg-cover bg-right-bottom">
                 <div className="lg:pr-[20%] max-md:py-0 py-10 px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-start">
                     <h1 className="text-secondaryHeading max-sm:text-3xl text-4xl font-sansSemibold">

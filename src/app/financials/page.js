@@ -2,14 +2,25 @@
 import React, { useState } from 'react';
 import Financials from '@/components/Financials';
 import RelativeSearchBar from '@/components/RelativeSearchBar';
+import Headtag from '@/components/headtag';
 
 export default function Financials_page() {
+
+    const meta = {
+        title : "Latest Financial Performance Overview - Stockverse",
+        description : "Get latest financial performance overview on Stockverse. Access key metrics, insights and updates to stay informed on market trends and company performance.",
+        og_title : " ",
+        og_description : " ",
+        og_url : " ",
+        og_img : " "
+    };
 
     // Step 1: Create a state for the symbol
     const [symbol, setSymbol] = useState('AAPL');
 
 return (
 <div className="w-full h-full flex flex-col items-center">
+    <Headtag {...meta}/>
     <div className="py-16 max-sm:py-10 w-full bg-newsBg bg-no-repeat bg-cover bg-right-bottom">
     <div className="lg:px-[15%] text-center max-md:py-0 py-10 px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-center">
         <h1 className="text-secondaryHeading max-sm:text-3xl text-4xl font-sansSemibold">Latest Financial Performance Overview</h1>

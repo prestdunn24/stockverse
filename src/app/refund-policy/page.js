@@ -1,7 +1,19 @@
+import Headtag from "@/components/headtag";
 
 export default function Policy() {
+
+    const meta = {
+        title : "Refund Policy - Stockverse",
+        description : "Review Stockverse's Refund Policy. Learn about subscription refunds, cancellations and exceptional circumstances. Contact us for refund requests or inquiries.",
+        og_title : " ",
+        og_description : " ",
+        og_url : " ",
+        og_img : " "
+    };
+
     return (
         <div className="hero py-16 max-md:py-6 w-full">
+        <Headtag {...meta} />
         <div className="px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-start">
             <h1 className="text-3xl font-sansSemibold text-primaryText">Refund Policy</h1>
             <p className="text-lg font-sansMedium text-primaryText">

@@ -2,14 +2,25 @@
 import React, { useState } from 'react';
 import Level2 from '@/components/Level2';
 import RelativeSearchBar from '@/components/RelativeSearchBar';
+import Headtag from '@/components/headtag';
 
 export default function Level_2() {
+
+  const meta = {
+    title : "Real-Time Level 2 Market Data - Stockverse",
+    description : "Access real-time Level 2 market data on Stockverse. Get detailed insights, live stock updates and trading tools to stay ahead in the market.",
+    og_title : " ",
+    og_description : " ",
+    og_url : " ",
+    og_img : " "
+};
 
     // Step 1: Create a state for the symbol
     const [symbol, setSymbol] = useState('aapl');
 
   return (
     <div className="w-full h-full flex flex-col items-center">
+      <Headtag {...meta}/>
       <div className="py-16 max-sm:py-10 w-full bg-newsBg bg-no-repeat bg-cover bg-right-bottom">
         <div className="lg:px-[15%] text-center max-md:py-0 py-10 px-6 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-center">
           <h1 className="text-secondaryHeading max-sm:text-3xl text-4xl font-sansSemibold">Real-Time Market Depth for Informed Trading Decisions</h1>
