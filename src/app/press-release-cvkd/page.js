@@ -120,10 +120,14 @@ const PRESSRELEASECVKD = () => {
             </div>
             <div className="py-6 max-md:py-6 px-3 max-sm:px-3 mx-auto xl:container gap-y-8 max-sm:gap-y-3 flex flex-col items-center justify-center">
                 <div className="w-full border-t-2 border-buy py-4">
-                    <h1 className="text-primaryText mb-4 text-center font-sansSemibold text-2xl">Disclaimer</h1>
+                <h1 className="text-primaryText mb-4 text-center font-sansSemibold text-2xl">Disclaimer</h1>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
                         *Ownership and Operation:*
-                        This website, including stockverse.ai, stockverse.io, and any associated social media accounts such as Twitter (@stockverseai), is owned, operated, and edited by StockVerse, a Wyoming Limited Liability Company (“LLC“). Any references to “we,” “our,” or “us” refer to StockVerse.
+                        This website/newsletter is owned, operated, and edited by Relqo Media LLC. Any wording found in this email or disclaimer referencing "I," "we," "our," or "Relqo Media" refers to Relqo Media LLC. This webpage/newsletter is a paid advertisement, not a recommendation or an offer to buy or sell securities. Our business model is to be financially compensated to market and promote small public companies. By reading our newsletter and our website, you agree to the terms of our disclaimer, which are subject to change at any time.
+                        We are not registered or licensed in any jurisdiction to provide investing advice or any advisory or consultancy services, and are therefore unqualified to give investment recommendations. Always conduct your own research and consult with a licensed investment professional before investing. This communication is never to be used as the basis for making investment decisions and is for entertainment purposes only. At most, this communication should serve as a starting point to conduct your own research and consult with a licensed professional regarding the companies profiled and discussed.
+                        Conduct your own research. Companies with a low price per share are speculative and carry a high degree of risk, so only invest what you can afford to lose. By using our service, you agree not to hold our site, its editors, owners, or staff liable for any damages, financial or otherwise, that may occur due to any action you may take based on the information contained within our newsletters or on our website.
+                        We do not advise any reader to take any specific action. Losses can be larger than expected if the company experiences issues with liquidity or wide spreads. Our website and newsletter are for entertainment purposes only. Never invest purely based on our alerts. Gains mentioned in our newsletter and on our website may be based on end-of-day or intraday data.
+                        This publication, its owners, and affiliates may hold positions in the securities mentioned in our alerts, which we may sell at any time without notice to our subscribers, potentially impacting share prices. If we own any shares, we will list the relevant stock information and the number of shares here. Relqo Media LLC's business model is to receive financial compensation to promote public companies.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
                     *Purpose:* These websites and social media accounts, and the content provided therein, are for informational and entertainment purposes only. We are in the business of marketing, advertising, and bringing brand awareness to small public companies. The content on these platforms is a paid advertisement and should not be interpreted as a recommendation or offer to buy or sell securities. 
@@ -133,16 +137,25 @@ const PRESSRELEASECVKD = () => {
                         StockVerse receives financial compensation for marketing and promotional services from the companies featured on these platforms. This compensation may include cash payments, stock options, or other forms of consideration, and may influence the content provided. The specific compensation details for our campaigns include:
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                    •⁠  *SRM Entertainment:* We have been compensated up to $250,000 to run a marketing campaign for SRM Entertainment from March to October 2024.
+                    •⁠  *SRM Entertainment:* Relqo Media LLC has been compensated up to $250,000 to conduct a marketing campaign for SRM Entertainment between March and October 2024.Cadrenal Therapeutics: Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until February 1, 2024, bringing the total compensation to $500,000.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                    •⁠  *Cadrenal Therapeutics:* We have been compensated up to $100,000 to run a 60-day marketing campaign for Cadrenal Therapeutics starting on August 8, 2024.
+                    •⁠  *Cadrenal Therapeutics:* Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until January 1st , 2024, bringing the total compensation to $500,000.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                    •⁠  *NeoVolta Inc:*  Relqo Media LLC Has been compensated $400,000 USD Starting 11/11/2024 to run a 60 day marketing campaign for Neovolta Inc. Relqo Media LLC owns 0 shares and does not plan to purchase or sell during this campaign.
+                    •⁠  *NeoVolta Inc:*  Relqo Media LLC has been compensated $400,000 starting November 11, 2024, to run a 90-day marketing campaign for NeoVolta Inc. Compensation represents a major conflict of interest in our ability to remain unbiased. Therefore, this communication should be viewed as a commercial advertisement only.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
-                    The compensation for these campaigns is provided by Penzance LLC, which pays us to advertise on behalf of the companies. We may sell the securities mentioned in our communications at any time without prior notice, which may impact share prices. This compensation creates a significant conflict of interest, and as such, all content on these platforms should be considered as commercial advertisement only.
+                        We have not investigated the background of the hiring third party or parties. The third party, profiled company, or their affiliates may wish to liquidate shares of the profiled company at or near the time you receive this communication, which could negatively impact share prices. Any non-compensated alerts are purely for the purpose of expanding our database for future financially compensated investor relations efforts. Frequently, companies profiled in our alerts may experience a significant increase in volume and share price during investor relations marketing, which may decline as soon as the marketing ceases.
+                    </p>
+                    <p className="text-xs leading-[180%] text-center text-primaryText">
+                    Our emails may contain forward-looking statements, which are not guaranteed to materialize due to a variety of factors. We do not guarantee the timeliness, accuracy, or completeness of the information on our site or in our newsletters. The information in our email newsletters and on our website is believed to be accurate and correct but has not been independently verified and is not guaranteed.
+                    </p>
+                    <p className="text-xs leading-[180%] text-center text-primaryText">
+                    The information is collected from public sources, such as the profiled company’s website and press releases, but is not researched or verified in any way to ensure its accuracy. Furthermore, Relqo Media often employs independent contractor writers who may make errors when researching information and preparing these communications regarding profiled companies. While independent writers' works are reviewed and edited before publication, errors or omissions may occur. You should assume all information in our communications is incorrect until you verify it yourself and are encouraged never to invest based solely on the information contained in our communications
+                    </p>
+                    <p className="text-xs leading-[180%] text-center text-primaryText">
+                    The information in this disclaimer is subject to change at any time without notice.
                     </p>
                     <p className="text-xs leading-[180%] text-center text-primaryText">
                     *No Investment Advice:*
