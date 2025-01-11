@@ -4,6 +4,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 import LogoutButton from './logout';
 import Link from 'next/link';
+import { usePhone } from '../context/PhoneContext'; // Import the custom hook
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
@@ -12,19 +13,39 @@ export default function User() {
     const [userInfo, setUserInfo] = useState(null);  // Initialize as null
     const [userInfoVisible, setUserInfoVisible] = useState(false);
     const token = Cookies.get('authToken');
+    const { setIsPhone } = usePhone(); // Access the `setIsPhone` function
 
-    // Check if userInfo is stored in localStorage and load it
     useEffect(() => {
-        const savedUserInfo = localStorage.getItem('UserInfo');
-        if (savedUserInfo) {
-            setUserInfo(JSON.parse(savedUserInfo));  // Use saved data from localStorage
-            setLoading(false);  // Stop loading if data is available
-        } else if (token) {
-            fetchUser();  // Fetch data from API if userInfo is not available
-        } else {
-            setLoading(false);  // No token, no user info, stop loading
+        if (typeof window !== 'undefined') {
+            const savedUserInfo = localStorage.getItem('UserInfo');
+        
+            if (savedUserInfo) {
+                try {
+                    const parsedUserInfo = JSON.parse(savedUserInfo); // Parse the stored JSON
+                    setUserInfo(parsedUserInfo); // Use saved data from localStorage
+                    setLoading(false); // Stop loading if data is available
+                } catch (error) {
+                    console.error('Error parsing UserInfo from localStorage:', error);
+                    setLoading(false); // Handle gracefully by stopping loading
+                }
+            } else if (token) {
+                fetchUser(); // Fetch data from API if userInfo is not available
+            } else {
+                setLoading(false); // No token, no user info, stop loading
+            }
         }
-    }, [token]);  // Dependency array includes token, runs when token changes
+    }, [token]); // Dependency array includes token, runs when token changes
+
+    
+    useEffect(() => {
+            if (userInfo && userInfo.user.phone === null) {
+                setIsPhone(false);
+            } else if (userInfo && userInfo.user.phone !== null) {
+                setIsPhone(true);
+            } else {
+                setIsPhone(true);
+            }
+    }, [userInfo]); // Dependency array includes token, runs when token changes
 
     // Fetch user data from API
     const fetchUser = async () => {
@@ -47,6 +68,9 @@ export default function User() {
                 console.log(response.data);
                 localStorage.setItem('UserInfo', JSON.stringify(response.data));  // Save data in localStorage
                 setUserInfo(response.data);  // Set the userInfo directly from API response
+                if (response.data.user.phone === null) {
+                    setIsPhone(false);
+                }
             } else {
                 console.log('Failed to fetch user');
             }

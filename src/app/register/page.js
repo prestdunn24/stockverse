@@ -13,6 +13,7 @@ export default function Register() {
     const [username, setUsername] = useState('');
     const [loading, setLoading] = useState(false);
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [OTP, setOTP] = useState('');
@@ -63,6 +64,7 @@ export default function Register() {
                 username,
                 email,
                 password,
+                phone,
             }, {
                 withCredentials: true,
             });
@@ -165,6 +167,23 @@ export default function Register() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             placeholder="Enter your email"
+                            required
+                            className="w-full text-base px-4 py-2 border bg-mobNavLink text-secondaryHeading border-secondaryHeading/40 rounded-lg focus:outline-none focus:border-secondaryHeading"
+                        />
+                    </div>
+                    <div className="relative w-full flex flex-col">
+                        <label htmlFor="phone" className="text-md font-Medium text-secondaryHeading">
+                            Phone Number
+                        </label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            autoComplete="tel"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            placeholder="+11234567890"
+                            pattern="\+1\d{10}"
+                            title="+11234567890"
                             required
                             className="w-full text-base px-4 py-2 border bg-mobNavLink text-secondaryHeading border-secondaryHeading/40 rounded-lg focus:outline-none focus:border-secondaryHeading"
                         />
