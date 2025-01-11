@@ -253,13 +253,18 @@ export default function Register() {
                             Register with Google
                         </a>
                     </div>
-                </form>
                 <p className="flex gap-x-2 text-md font-Medium text-secondaryHeading">
                     Already have an account?
                     <Link className="underline" href='/login'>
                         Sign In!
                     </Link>
                 </p>
+                <p className="flex gap-x-2 text-md font-Medium text-xs">
+                    By submitting this form and signing up for texts, you consent to receive marketing text messages (e.g. promos, cart reminders) from Relqo Media at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available). Privacy Policy & Terms.
+                </p>
+                </form>
+                
+
                 {message && <p className="mt-4 text-red-600 text-center">{message}</p>}
             </div>
 
