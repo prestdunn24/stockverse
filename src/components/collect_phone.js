@@ -13,7 +13,7 @@ export default function CollectPhone() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState(null);
   const { isPhone, setIsPhone } = usePhone(); // Access the context
-  const [phone, setPhone] = useState('');
+  const [phone, setPhone] = useState('+1');
   const token = Cookies.get('authToken');
 
 

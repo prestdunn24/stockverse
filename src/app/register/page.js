@@ -13,7 +13,7 @@ export default function Register() {
     const [username, setUsername] = useState('');
     const [loading, setLoading] = useState(false);
     const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
+    const [phone, setPhone] = useState('+1');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [OTP, setOTP] = useState('');
