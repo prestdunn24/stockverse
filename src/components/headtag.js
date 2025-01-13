@@ -1,6 +1,6 @@
 import Script from "next/script";
 
-export default function Headtag({title,description,og_title,og_description,og_url,og_img}){
+export default function Headtag({title,description,og_title,og_description,og_url,og_img,schema}){
   return(
     <head>
         <title>{title}</title>
@@ -11,7 +11,12 @@ export default function Headtag({title,description,og_title,og_description,og_ur
         <meta property="og:url" content={og_url} />
         <meta property="og:image" content={og_img} />
         <meta name="twitter:card" content="summary_large_image" />
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schema),
+          }}
+        />
         
 
     </head>

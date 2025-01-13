@@ -25,6 +25,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Stockverse",
+              "url": "https://stockverse.com/",
+              "logo": "https://stockverse.com/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "contact@stockverse.com",
+                "contactType": "customer support"
+              }            
+            }),
+          }}
+        />
+
+
+
       <Script id="gtm-head" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -48,6 +69,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-16488126373');
           `}
         </Script>
+        
       </head>
       <body className="bg-background w-[100%] mx-auto">
         {/* <!-- Google Tag Manager (noscript) --> */}

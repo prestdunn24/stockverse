@@ -11,8 +11,20 @@ export default function GainersLosersPage() {
         og_title : " ",
         og_description : " ",
         og_url : " ",
-        og_img : " "
-    };
+        og_img : " ",
+        schema : {
+            "@context": "https://schema.org",
+            "@type": "Dataset",
+            "name": "Live Stock Data",
+            "description": "Real-time stock market data including prices, volumes, and more.",
+            "url": "https://stockverse.com/gainers&losers",
+            "creator": {
+              "@type": "Organization",
+              "name": "Stockverse",
+            },
+          },
+        };
+    
 
     // Initialize the filter state with null to wait for sessionStorage check
     const [filter, setFilter] = useState(null);
