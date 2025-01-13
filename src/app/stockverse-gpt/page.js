@@ -577,17 +577,17 @@ export default function Stockverse_GPT() {
             {/* IsLogin popup start*/}
             <div className={`${isLogin ? 'visible' : 'hidden'} fixed z-50 shadow-lg top-0 left-0 bottom-0 right-0 bg-primaryText/70 flex items-center justify-center`}>
                 <div className='max-w-[90%] w-max p-8 rounded-lg bg-background text-center flex flex-col items-center gap-4'>
-                    <p className="text-lg text-primaryText text-center">Please Login / Create Free Account to Use StockverseGPT</p>
+                    <p className="text-lg text-primaryText text-center">Access StockverseGPT: Log In or Sign Up Free!</p>
                     <div className="flex gap-4 flex-wrap">
                         <Link href='/login'
-                            className="w-max bg-sell text-base text-primaryButtonText py-2 px-8 hover:bg-secondaryHeading hover:text-mobNavLink transition duration-300"
+                            className="w-max bg-primaryButtonBg text-base text-primaryButtonText py-2 px-8 hover:bg-secondaryHeading hover:text-mobNavLink transition duration-300"
                         >
-                            Login / Create Free Account
+                            Login 
                         </Link>
-                        <Link href='/'
+                        <Link href='/register'
                         className="w-max bg-buy text-base text-primaryButtonText py-2 px-8 hover:bg-secondaryHeading hover:text-mobNavLink transition duration-300"
                         >
-                            Go to DashBoard
+                            Create Free Account
                         </Link>
                     </div>
                 </div>
