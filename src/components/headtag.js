@@ -11,7 +11,7 @@ export default function Headtag({title,description,og_title,og_description,og_ur
         <meta property="og:url" content={og_url} />
         <meta property="og:image" content={og_img} />
         <meta name="twitter:card" content="summary_large_image" />
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(schema),
