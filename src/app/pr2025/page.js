@@ -62,7 +62,7 @@ const PRESSRELEASENEOV = () => {
                 <div className="flex flex-col">
                     <p className="text-base text-primaryText leading-[110%]">News Provided by</p>
                     <Link href='https://stockverse.com/news' className=" leading-[110%] text-md  text-primaryHeading">Stockverse.com</Link>
-                    <p className="text-sm  text-primaryText leading-[110%]">Jan 14, 2024, 08:30 ET</p>
+                    <p className="text-sm  text-primaryText leading-[110%]">{`Jan 14, 2024, 08:30 ET`}</p>
                 </div>
                 <div className="">
                     <p className="text-base  text-primaryText leading-[110%]">SHARE THIS ARTICLE</p>
@@ -100,23 +100,10 @@ const PRESSRELEASENEOV = () => {
                 <p className="text-base text-primaryText leading-[200%]">{`“As a former Marine Corps officer, I provide my own security by being vigilant about my surroundings all the time,” he added.`}</p>
                 <p className="text-base text-primaryText leading-[200%]">{`The Cadrenal (Nasdaq: CVKD) recently `}<Link href="https://www.bizjournals.com/jacksonville/news/2024/04/09/cadrenal-therapeutics-receives-fda-approval.html" className="text-primaryHeading">{`Orphan Drug Designation`}</Link> {`for its late-stage novel oral and reversible anticoagulant tecarfarin. The blood thinner designed to prevent heart attacks, strokes and deaths due to blood clots in patients with rare cardiovascular conditions was granted the status by the`} <Link href="https://www.bizjournals.com/jacksonville/organization/us-food-and-drug-administration" className="text-primaryHeading">{`FDA`}</Link>{` for the prevention of thromboembolism and thrombosis in patients with an implanted mechanical circulatory support device. The only LVAD available in the United States is the HeartMate 3, manufactured by Abbott. All patients with LVADs require lifelong anticoagulation to protect against thromboembolic events. Last summer Cadrenal announced that it is in discussion with Abbott about a collaboration in its pivotal study later this year.`}</p>
                 <p className="text-base text-primaryText leading-[200%]">{`Also, Cadrenal Therapeutics recently announced it raised approximately $9.8 million in recent financing transactions.`}</p>
-
-                
-                <div className="flex flex-col gap-1">
-                    <p className="text-lg font-sansMedium text-primaryText leading-[200%]">{`Corporate and Investor Relations`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`Lisa DeScenza`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`LaVoieHealthScience`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`(978) 395-5970`}</p>
-                    <p className="text-base text-primaryHeading leading-[120%]"><Link href='mailto:ldescenza@lavoiehealthscience.com'>ldescenza@lavoiehealthscience.com</Link></p>
-                </div>
-                <div className="flex flex-col gap-1">
-                    <p className="text-lg font-sansMedium text-primaryText leading-[200%]">{`Media`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`Andrew Korda`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`LaVoieHealthScience`}</p>
-                    <p className="text-base text-primaryText leading-[120%]">{`(617) 865-0043`}</p>
-                    <p className="text-base text-primaryHeading leading-[120%]"><Link href='mailto:akorda@lavoiehealthscience.com'>akorda@lavoiehealthscience.com</Link></p>
-                </div>
-
+                <p className="text-base text-primaryText leading-[200%]">{`Shares of CVKD were $15.84 as of press time Monday.`}</p>
+                <p className="text-base text-primaryText leading-[200%]">{`Consider joining our membership too.`}</p>
+                <p className="text-base text-primaryText leading-[200%]">{`Happy investing,`}</p>
+                <p className="text-base text-primaryText leading-[200%]">{`Mark w/ StockVerse`}</p>
             </div>
             <div className="py-6 max-md:py-6 px-3 max-sm:px-3 mx-auto xl:container gap-y-8 max-sm:gap-y-3 flex flex-col items-center justify-center">
                 <div className="w-full border-t-2 border-buy py-4">
