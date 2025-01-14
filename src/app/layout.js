@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
 
-      <Script
+      <Script id="seo-schema" 
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
