@@ -4,6 +4,8 @@ import { usePhone } from '../context/PhoneContext'; // Import the custom hook
 import axios from 'axios';
 import React from 'react';
 import Cookies from 'js-cookie';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; // Optional default styles
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
@@ -23,8 +25,10 @@ export default function CollectPhone() {
     e.preventDefault();
 
     try {
+      const sanitizedPhone = phone.replace(/[^\d+]/g, ''); // Keeps digits and the `+` character
       const response = await axios.post(`${STOCKVERSE_BACK_END}/add_phone`, {
-        phone,
+        // Sanitize phone number
+        phone: `+${sanitizedPhone}`,
       }, {
         withCredentials: true,
       });
@@ -88,18 +92,31 @@ export default function CollectPhone() {
               <label htmlFor="otp" className="text-md font-Medium text-secondaryHeading">
                 Phone Number
               </label>
-              <input
-                type="tel"
-                id="phone"
-                autoComplete="tel"
+              <PhoneInput
+                country={'us'} // Default country code
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-                placeholder="+11234567890"
-                pattern="\+1\d{10}"
-                title="+11234567890"
-                required
-                className="w-full text-base px-4 py-2 border bg-mobNavLink text-secondaryHeading border-secondaryHeading/40 rounded-lg focus:outline-none focus:border-secondaryHeading"
-              />
+                onChange={(value) => setPhone(value)} // Updates phone state with formatted value
+                inputProps={{
+                    id: 'phone',
+                    required: true,
+                    autoFocus: false,
+                }}
+                inputStyle={{
+                    width: '100%',
+                    padding: '10px 10px 10px 50px',
+                    fontSize: '16px',
+                    border: '1px solid rgba(156, 163, 175, 0.4)',
+                    borderRadius: '0.5rem',
+                    backgroundColor: '#F7FAFC', // Adjust this to match your `bg-mobNavLink`
+                    color: '#1A202C', // Matches `text-secondaryHeading`
+                }}
+                containerStyle={{
+                    width: '100%',
+                }}
+                dropdownStyle={{
+                    borderRadius: '0.5rem',
+                }}
+            />
             </div>
             <button
               disabled={loading}
