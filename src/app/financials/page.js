@@ -12,7 +12,46 @@ export default function Financials_page() {
         og_title : " ",
         og_description : " ",
         og_url : " ",
-        og_img : " "
+        og_img : " ",
+        schema: {
+            "@context": "https://schema.org",
+            "@type": "Dataset",
+            "name": "Companies Financial Performance",
+            "description": "Get the latest financial performance overview on Stockverse. Access key metrics, insights, and updates on market trends and company performance.",
+            "url": "https://stockverse.com/financials",
+            "creator": {
+              "@type": "Organization",
+              "name": "Stockverse",
+              "url": "https://stockverse.com"
+            },
+            "license": "https://stockverse.com/terms",
+            "keywords": [
+              "financial data",
+              "company performance",
+              "stock analysis",
+              "financial metrics",
+              "revenue",
+              "net income",
+              "gross profit",
+              "current asset",
+              "net cash flow"
+            ],
+            "isAccessibleForFree": true,
+            "spatialCoverage": {
+              "@type": "Place",
+              "name": "Global"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://stockverse.com/financials",
+              "query-input": "required name=company"
+            },
+            "provider": {
+              "@type": "Organization",
+              "name": "Stockverse",
+              "url": "https://stockverse.com"
+            }
+        }
     };
 
     // Step 1: Create a state for the symbol

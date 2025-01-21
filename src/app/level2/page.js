@@ -12,7 +12,44 @@ export default function Level_2() {
     og_title : " ",
     og_description : " ",
     og_url : " ",
-    og_img : " "
+    og_img : " ",
+    schema : {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "Real-Time Level 2 Market Data",
+      "description": "Track real-time market activity with detailed Level 2 market data on Stockverse. Filter by company name and date to get bid and ask prices, order book volumes, and other granular insights that reveal buyer and seller interest.",
+      "url": "https://stockverse.com/level2",
+      "creator": {
+        "@type": "Organization",
+        "name": "Stockverse",
+        "url": "https://stockverse.com"
+      },
+      "license": "https://stockverse.com/terms",
+      "keywords": [
+        "Level 2 Market Data",
+        "Level 2 Data",
+        "real-time Level 2 data",
+        "bid and ask prices",
+        "market transparency",
+        "real-time market data",
+        "company stock data",
+        "trading insights"
+      ],
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "name": "Search Company Data",
+          "target": "https://stockverse.com/level2?query={company}",
+          "query-input": "required name=company"
+        },
+        {
+          "@type": "Action",
+          "name": "Filter by Date",
+          "description": "Filter Level 2 market data by selecting a specific date to view insights for that time period.",
+          "target": "https://stockverse.com/level2"
+        }
+      ]
+    }
 };
 
     // Step 1: Create a state for the symbol

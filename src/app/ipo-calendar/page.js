@@ -11,7 +11,35 @@ export default function Ipo_Calendar () {
         og_title : " ",
         og_description : " ",
         og_url : " ",
-        og_img : " "
+        og_img : " ",
+        schema: {
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          "name": "IPO Calendar",
+          "description": "Explore the IPO calendar on Stockverse. Stay updated by filtering IPO data using options like Upcoming, Active, or Withdrawn.",
+          "url": "https://stockverse.com/ipo-calendar",
+          "creator": {
+            "@type": "Organization",
+            "name": "Stockverse",
+            "url": "https://stockverse.com"
+          },
+          "license": "https://stockverse.com/terms",
+          "keywords": [
+            "IPO calendar",
+            "upcoming IPOs",
+            "active IPOs",
+            "withdrawn IPOs",
+            "delisted IPOs",
+            "IPO filters",
+            "IPO insights"
+          ],
+          "potentialAction": {
+            "@type": "Action",
+            "name": "Filter IPO Calendar Data",
+            "description": "Filter IPO data by selecting options of Upcoming, Active, or Withdrawn IPOs.",
+            "target": "https://stockverse.com/ipo-calendar"
+          }
+        }
     };
 
 
