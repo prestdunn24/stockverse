@@ -1,7 +1,7 @@
 import React from 'react';
 import Headtag from '@/components/headtag';
 
-const CVKD = () => {
+const CADRENAL = () => {
 
   const meta = {
     title : "Cadrenal Therapeutics, (CVKD) Stock Price & Analysis - Stockverse",
@@ -24,4 +24,4 @@ const CVKD = () => {
   );
 };
 
-export default CVKD;
+export default CADRENAL;
