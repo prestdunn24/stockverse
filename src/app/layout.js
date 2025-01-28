@@ -11,8 +11,12 @@ import { usePathname } from 'next/navigation';
 import { MembershipProvider } from '../context/MembershipContext';
 import { PhoneProvider } from '../context/PhoneContext';
 import Head from 'next/head';
+import { useEffect,useState} from 'react';
 
 export default function RootLayout({ children }) {
+
+
+
 
   const pathname = usePathname();
 
@@ -22,10 +26,60 @@ export default function RootLayout({ children }) {
   // Check if the current route is in the excluded routes
   const hideNavbarFooter = excludedRoutes.includes(pathname);
 
+  const [recaptchaToken, setRecaptchaToken] = useState('');
+
+  useEffect(() => {
+    const siteKey = '6LdlP8YqAAAAADEFs05ppX8q4wQCX7n9YacZFK0M';
+    const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
+
+    const loadRecaptcha = () => {
+      if (typeof window !== 'undefined' && window.grecaptcha) {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha.execute(siteKey, { action: 'render' }).then(async (token) => {
+            setRecaptchaToken(token); // Save token
+            console.log('reCAPTCHA Token:', token);
+
+            // Send token to the backend for verification
+            try {
+              const response = await fetch(`${STOCKVERSE_BACK_END}/verify-recaptcha`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ token }), // Use token directly
+              });
+              const data = await response.json();
+
+              if (data.success) {
+                console.log('Token verified!');
+              } else {
+                console.log('Verification failed!');
+              }
+            } catch (error) {
+              console.error('Error verifying reCAPTCHA:', error);
+            }
+          });
+        });
+      }
+    };
+
+    // Load the reCAPTCHA script if not already loaded
+    if (!document.querySelector(`script[src="https://www.google.com/recaptcha/api.js?render=${siteKey}"]`)) {
+      const script = document.createElement('script');
+      script.src = `https://www.google.com/recaptcha/api.js?render=${siteKey}`;
+      script.async = true;
+      script.defer = true;
+      script.onload = loadRecaptcha;
+      document.head.appendChild(script);
+      script.setAttribute('data-badge', 'bottomright');
+    } else {
+      loadRecaptcha();
+    }
+  }, [pathname]); // Empty dependency array ensures it runs only once on mount
+
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-
+      {/* <Script src={`https://www.google.com/recaptcha/api.js?render=6Lc3KcYqAAAAAP9bYApNgv5FMq6QIU_Uh-n_C4K6`} async defer></Script> */}
       <Script id="seo-schema" 
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -77,6 +131,7 @@ export default function RootLayout({ children }) {
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <MembershipProvider>
           <PhoneProvider>
+          
             <Providers>
               <NextThemesProvider>
                 <ThemeProvider>
@@ -87,7 +142,8 @@ export default function RootLayout({ children }) {
                   </main>
                 </ThemeProvider>
               </NextThemesProvider>
-            </Providers>
+             </Providers>
+          
           </PhoneProvider>
         </MembershipProvider>
         <Script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SNDh4K"></Script>
