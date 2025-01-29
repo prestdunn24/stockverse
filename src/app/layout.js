@@ -37,7 +37,6 @@ export default function RootLayout({ children }) {
         window.grecaptcha.ready(() => {
           window.grecaptcha.execute(siteKey, { action: 'render' }).then(async (token) => {
             setRecaptchaToken(token); // Save token
-            console.log('reCAPTCHA Token:', token);
 
             // Send token to the backend for verification
             try {
@@ -79,7 +78,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      {/* <Script src={`https://www.google.com/recaptcha/api.js?render=6Lc3KcYqAAAAAP9bYApNgv5FMq6QIU_Uh-n_C4K6`} async defer></Script> */}
       <Script id="seo-schema" 
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -131,7 +129,6 @@ export default function RootLayout({ children }) {
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <MembershipProvider>
           <PhoneProvider>
-          
             <Providers>
               <NextThemesProvider>
                 <ThemeProvider>
@@ -143,7 +140,6 @@ export default function RootLayout({ children }) {
                 </ThemeProvider>
               </NextThemesProvider>
              </Providers>
-          
           </PhoneProvider>
         </MembershipProvider>
         <Script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SNDh4K"></Script>
