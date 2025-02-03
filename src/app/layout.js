@@ -21,10 +21,14 @@ export default function RootLayout({ children }) {
   const pathname = usePathname();
 
   // Define routes where Navbar and Footer should be hidden
-  const excludedRoutes = ['/stockverse-gpt', '/dashboard', '/test'];
+  const excludedNavbar = ['/stockverse-gpt', '/dashboard', '/test'];
+  // Define routes where Navbar and Footer should be hidden
+  const excludedFooter = ['/stockverse-gpt', '/dashboard', '/test', '/cvkd-page'];
 
   // Check if the current route is in the excluded routes
-  const hideNavbarFooter = excludedRoutes.includes(pathname);
+  const hideNavbar = excludedNavbar.includes(pathname);
+  // Check if the current route is in the excluded routes
+  const hideFooter = excludedFooter.includes(pathname);
 
   const [recaptchaToken, setRecaptchaToken] = useState('');
 
@@ -133,13 +137,13 @@ export default function RootLayout({ children }) {
               <NextThemesProvider>
                 <ThemeProvider>
                   <main className="w-[100%] min-h-[100vh] flex flex-col">
-                    {!hideNavbarFooter && <Navbar />}
+                    {!hideNavbar && <Navbar />}
                       {children}
-                    {!hideNavbarFooter && <Footer />}
+                    {!hideFooter && <Footer />}
                   </main>
                 </ThemeProvider>
               </NextThemesProvider>
-             </Providers>
+            </Providers>
           </PhoneProvider>
         </MembershipProvider>
         <Script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SNDh4K"></Script>
