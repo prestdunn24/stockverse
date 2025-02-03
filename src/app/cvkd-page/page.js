@@ -132,8 +132,8 @@ const Cvkd = ()=> {
         "isTransparent": false,
         "largeChartUrl": "",
         "displayMode": "regular",
-        "width" : 600,
-        "height": 480,
+        "width" : 100%,
+        "height": 100%,
         "colorTheme": "light",
         "symbol": "NASDAQ:CVKD",
         "locale": "en"
@@ -278,26 +278,28 @@ return(
             </div>
           </section>
 
-          <section className="flex flex-col items-center bg-[#000000] md:px-[5rem] px-6 bg-cvkd-bg-7 bg-no-repeat bg-[length:100%_100%] py-12 pb-[10rem] w-full text-center clippy-1">
-            <h1 className="flex items-center justify-center text-[2.2rem] md:text-[3.2rem] font-MontserratSemi text-[#ffffff] border-2 border-dashed border-[#fff] rounded px-2 my-4">
+          {/* hero section */}
+          <section className="flex flex-col items-center bg-[#000000] px-2 lg:px-3 xl:px-6 bg-cvkd-bg-7 bg-no-repeat bg-[length:100%_100%] py-12 pb-[10rem] w-full text-center clippy-1">
+            <div className="flex flex-col items-center xl:container mx-auto">
+            <h1 className="text-[6vw] md:text-5xl xl:text-6xl 2xl:text-7xl flex items-center justify-center font-MontserratSemi text-[#ffffff] border-2 border-dashed border-[#fff] rounded-xl xl:p-6 p-4 lg:mt-8 mt-4 lg:mb-12 mb-6">
               Hot Stock Alert: <span className="text-[#0A84EF]"> (CVKD)</span>
             </h1>
-            <p className="text-[1.4rem] md:text-[2rem] font-MontserratMedium text-[#fff] mt-[1rem]">
+            <p className="font-MontserratMedium text-[#fff] text-lg md:text-xl  lg:text-2xl xl:text-3xl 2xl:text-4xl mb-3">
               Nasdaq: Cadrenal Therapeutics (CVKD)
             </p>
-            <p className="font-MontserratSemi text-[1.6rem] md:text-[2.2rem] text-[#fff] mb-[2rem]">
+            <p className="font-MontserratSemi text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
               {`This $17.30 Stock May SOAR 214.73%... Here's why.`}
             </p>
 
-            <div className="w-full md:w-[75%] flex flex-col md:flex-row justify-between text-left">
-              <ul className="space-y-3 text-[#fff] w-full md:w-[42%] font-MontserratMedium text-[0.8rem] lg:text-[1rem] mb-4 md:mb-0">
+            <div className="w-full lg:w-[97%]  flex flex-col md:flex-row justify-between text-left mb-4">
+              <ul className="space-y-3 text-[#fff] w-full md:w-[42%] font-MontserratMedium text-base lg:text-lg 2xl:text-xl">
                 <li className="flex items-start gap-2">
                   <Image
                     src="/images/tick.png"
                     alt="tick"
-                    width={100}
-                    height={100}
-                    className="w-[1.4rem] h-[1.4rem]"
+                    width={60}
+                    height={60}
+                    className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
                   New Blood Thinner Drug in Collaboration With Abbott
                 </li>
@@ -305,21 +307,21 @@ return(
                   <Image
                     src="/images/tick.png"
                     alt="tick"
-                    width={100}
-                    height={100}
-                    className="w-[1.4rem] h-[1.4rem]"
+                    width={60}
+                    height={60}
+                    className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
                   Phase 3 Clinical Trials Underway, FDA Fast-Tracked Drug
                 </li>
               </ul>
-              <ul className="space-y-3 text-[#fff] w-full md:w-[54%] font-MontserratMedium text-[0.8rem] lg:text-[1rem]">
+              <ul className="space-y-3 text-[#fff] w-full md:w-[54%] font-MontserratMedium text-base lg:text-lg 2xl:text-xl">
                 <li className="flex items-start gap-2">
                   <Image
                     src="/images/tick.png"
                     alt="tick"
-                    width={100}
-                    height={100}
-                    className="w-[1.4rem] h-[1.4rem]"
+                    width={60}
+                    height={60}
+                    className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
                   CVKD Named Anticoagulation Therapy Company of the Year by Pharma Tech Outlook
                 </li>
@@ -327,16 +329,16 @@ return(
                   <Image
                     src="/images/tick.png"
                     alt="tick"
-                    width={100}
-                    height={100}
-                    className="w-[1.3rem] h-[1.3rem]"
+                    width={60}
+                    height={60}
+                    className="w-[1.3rem] h-[1.3rem] xl:w-[2rem] xl:h-[2rem]"
                   />
                   Targeting a $2 billion US market and addressing a critical unmet medical need in cardiovascular care during a global health crisis
                 </li>
               </ul>
             </div>
 
-            <div className="mt-6 w-full">
+            <div className="mt-2 w-full">
               {!done && (
                 <form onSubmit={handleSubscribeEmailOnly} className="w-full flex flex-col md:flex-row items-center justify-center gap-4 mt-[2rem]">
                   <input
@@ -345,11 +347,11 @@ return(
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="placeholder:text-[#000] px-4 py-[0.3rem] font-MontserratMedium w-[80%] md:w-[30%] rounded text-[#000] focus:outline-none"
+                    className="placeholder:text-[#000] text-md px-4 py-[0.3rem] xl:py-[0.6rem] font-MontserratMedium w-[80%] md:w-[30%] rounded-lg text-[#000] focus:outline-none"
                   />
                   <button
                     type="submit"
-                    className="px-6 py-[0.3rem] rounded font-MontserratMedium bg-[#0A84EF] text-[#fff] mt-4 md:mt-0"
+                    className="px-6 py-[0.3rem] text-md xl:py-[0.6rem] rounded-lg font-MontserratMedium bg-[#0A84EF] text-[#fff] mt-4 md:mt-0"
                   >
                     Submit
                   </button>
@@ -362,59 +364,60 @@ return(
               )}
             </div>
 
-            <div className="flex justify-center gap-[2rem] mt-12 flex-wrap">
+            <div className="flex items-center justify-center md:gap-4 gap-2 mt-8 flex-wrap">
               <Image
                 src="/images/fiedelity.png"
                 alt="Fidelity"
-                width={100}
-                height={100}
-                className="w-[2.5rem] h-[2.5rem] lg:w-[3.5rem] lg:h-[3.5rem]"
+                width={60}
+                height={60}
+                className="max-md:w-12 max-md:h-12"
               />
               <Image
                 src="/images/charles schwan.png"
                 alt="Charles Schwab"
-                width={100}
-                height={100}
-                className="w-[2.5rem] h-[2.5rem] lg:w-[3.5rem] lg:h-[3.5rem]"
+                width={60}
+                height={60}
+                className="max-md:w-12 max-md:h-12"
               />
               <Image
                 src="/images/3.png"
                 alt="Logo 3"
-                width={100}
-                height={100}
-                className="w-[2.5rem] h-[2.5rem] lg:w-[3.5rem] lg:h-[3.5rem]"
+                width={60}
+                height={60}
+                className="max-md:w-12 max-md:h-12"
               />
               <Image
                 src="/images/4.png"
                 alt="Webull"
-                width={100}
-                height={100}
-                className="w-[2.5rem] h-[2.5rem] lg:w-[3.5rem] lg:h-[3.5rem]"
+                width={60}
+                height={60}
+                className="max-md:w-12 max-md:h-12"
               />
               <Image
                 src="/images/5.png"
                 alt="Webull"
-                width={100}
-                height={100}
-                className="w-[2.5rem] h-[2.5rem] lg:w-[3.5rem] lg:h-[3.5rem]"
+                width={60}
+                height={60}
+                className="max-md:w-12 max-md:h-12"
               />
+            </div>
+            </div>
+          </section>
+          <section className="w-full h-full xl:container mx-auto px-6 2xl:px-0 mt-[-6rem] relative z-5 md:mb-[7rem] mb-[3rem]">
+            <div className="shadow-xl rounded-2xl overflow-hidden">
+            <div className="tradingview-widget-container" ref={containerRef3}></div>
             </div>
           </section>
 
-          <section className="md:px-[5rem] px-6 mt-[-6rem] relative z-5 md:mb-[7rem] mb-[3rem]">
-           <div className="shadow-[0px_4px_30px_0px_#0000001A]">
-           <div className="tradingview-widget-container" ref={containerRef3}></div>
-           </div>
-          </section>
 
-          <section className="flex flex-col md:flex-row bg-[#000] bg-custom-gradient-2 md:bg-custom-gradient bg-[length:140%_100%] lg:bg-[length:85%_100%] bg-right bg-no-repeat py-12 md:py-24 px-6 md:px-20">
-            <div className="w-full lg:w-[80%] xl:w-full ">
-              <h1 className="text-[#fff] text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] leading-[110%] font-semibold font-MontserratSemi mb-8 md:mb-12">
+          <section className="flex flex-col md:flex-row bg-[#000] bg-custom-gradient-2 md:bg-custom-gradient bg-cover bg-top-right bg-no-repeat">
+            <div className="w-full xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
                 Strong Clinical Backing <br />and Upcoming Catalysts
               </h1>
               <div>
-                <ul className="list-disc space-y-4 text-[#fff] w-full">
-                  <li className="flex items-center gap-2 text-xl md:text-2xl font-MontserratSemi">
+                <ul className="list-disc space-y-4 text-[#fff] w-full xl:w-[80%]">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -424,10 +427,10 @@ return(
                     />
                     Phase 3 Trial Success
                   </li>
-                  <p className="text-base md:text-xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
                     CVKD’s Tecarfarin is heading to Phase 3, where positive results could validate its effectiveness and boost the stock.
                   </p>
-                  <li className="flex items-center gap-2 text-xl md:text-2xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl 2xl:text-3xl md:text-2xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -437,7 +440,7 @@ return(
                     />
                     Key Catalysts Ahead
                   </li>
-                  <p className="text-base md:text-xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
                     With upcoming trial results and potential FDA approval, CVKD is poised for strong gains, offering a prime trading opportunity.
                   </p>
                 </ul>
@@ -778,8 +781,8 @@ return(
             </div>
           </section>
 
-          <section className="pt-[10rem] pb-[5rem] px-[1rem] sm:px-[2rem] lg:px-[5rem] bg-[#000] mt-[-7rem]">
-            <div className="flex flex-col lg:flex-row lg:justify-between pb-[4rem] border-b border-solid border-[#404040] space-y-10 lg:space-y-0">
+          <section className="w-full bg-[#000]">
+            <div className="w-full xl:container py-28 xl:px-0 px-8 mx-auto flex flex-col lg:flex-row lg:justify-between border-b border-solid border-[#404040] space-y-10 lg:space-y-0">
               {/* Left Section - Sign Up */}
               <div className="w-full lg:w-[48%]">
                 <div className="bg-[#111111] border border-solid border-[#404040] p-6 sm:p-8 rounded-2xl shadow-lg">
@@ -930,67 +933,69 @@ return(
             </div>
           </section>
 
-          <footer className="bg-[#000] pb-[4rem] border-b border-[#404040]">
-          <div className="flex flex-wrap justify-between px-6 lg:px-[5rem] gap-8">
-            {/* Description Section */}
+          <footer className="w-full bg-[#000] py-12">
+            <div className="w-full xl-container mx-auto">
+              <div className="flex flex-wrap justify-between px-6 lg:px-[5rem] gap-8">
+                {/* Description Section */}
 
-            <div className="w-full lg:w-[45%]">
-              <Image src="/images/Logo.svg" width={100} height={100} alt="logo" className="w-[12rem] mb-8"/>
-              <p className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular">
-                Your trusted platform for live Stock Data, Stock News, IPO Calendar, 
-                AI-driven insights, Stock Picks, Alerts, and personalized analysis tools.
-              </p>
+                <div className="w-full lg:w-[45%]">
+                  <Image src="/images/Logo.svg" width={100} height={100} alt="logo" className="w-[12rem] mb-8"/>
+                  <p className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular">
+                    Your trusted platform for live Stock Data, Stock News, IPO Calendar, 
+                    AI-driven insights, Stock Picks, Alerts, and personalized analysis tools.
+                  </p>
+                </div>
+                {/* Quick Links */}
+                <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
+                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                    Quick Links
+                  </h3>
+                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Stockverse GPT</a></li>
+                    <li><a href="">Stock Picks</a></li>
+                  </ul>
+                </div>
+                {/* Market */}
+                <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
+                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                    Market
+                  </h3>
+                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                    <li><a href="">Gainers/Losers</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">IPO Calendar</a></li>
+                  </ul>
+                </div>
+                {/* Contact */}
+                <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
+                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                    Contact
+                  </h3>
+                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                    <li><a href="">Email Us</a></li>
+                    <li><a href="">Send Us Feedback</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center justify-between mt-[4rem] border-t border-[#404040] pt-[2rem] px-6 lg:px-[5rem] gap-4">
+                <p className="text-[#aaa] text-[0.9rem] lg:text-[1rem]">
+                  © 2024 Stockverse, All rights reserved.
+                </p>
+                <ul className="text-[#aaa] text-[0.9rem] lg:text-[1rem] font-MontserratRegular flex flex-wrap">
+                  <li className="border-r-2 border-[#fafafa] pr-4">
+                    <a href="">Disclaimer</a>
+                  </li>
+                  <li className="border-r-2 border-[#fafafa] px-4">
+                    <a href="">Terms of Service</a>
+                  </li>
+                  <li className="border-r-2 border-[#fafafa] px-4">
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li className="pl-0 sm:pl-4"><a href="">Refund Policy</a></li>
+                </ul>
+              </div>
             </div>
-            {/* Quick Links */}
-            <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-              <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
-                Quick Links
-              </h3>
-              <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
-                <li><a href="">Home</a></li>
-                <li><a href="">Stockverse GPT</a></li>
-                <li><a href="">Stock Picks</a></li>
-              </ul>
-            </div>
-            {/* Market */}
-            <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-              <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
-                Market
-              </h3>
-              <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
-                <li><a href="">Gainers/Losers</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">IPO Calendar</a></li>
-              </ul>
-            </div>
-            {/* Contact */}
-            <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-              <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
-                Contact
-              </h3>
-              <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
-                <li><a href="">Email Us</a></li>
-                <li><a href="">Send Us Feedback</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center justify-between mt-[4rem] border-t border-[#404040] pt-[2rem] px-6 lg:px-[5rem] gap-4">
-            <p className="text-[#aaa] text-[0.9rem] lg:text-[1rem]">
-              © 2024 Stockverse, All rights reserved.
-            </p>
-            <ul className="text-[#aaa] text-[0.9rem] lg:text-[1rem] font-MontserratRegular flex flex-wrap">
-              <li className="border-r-2 border-[#fafafa] pr-4">
-                <a href="">Disclaimer</a>
-              </li>
-              <li className="border-r-2 border-[#fafafa] px-4">
-                <a href="">Terms of Service</a>
-              </li>
-              <li className="border-r-2 border-[#fafafa] px-4">
-                <a href="">Privacy Policy</a>
-              </li>
-              <li className="pl-0 sm:pl-4"><a href="">Refund Policy</a></li>
-            </ul>
-          </div>
           </footer>
 
           <section className="bg-[#EF0F6AF5] py-4 px-2">
