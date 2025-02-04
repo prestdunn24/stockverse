@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css'; // Optional default styles
 import axios from "axios";
+import Link from "next/link";
 
 const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
@@ -301,7 +302,7 @@ return(
                     height={60}
                     className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
-                  New Blood Thinner Drug in Collaboration With Abbott
+                  New Blood Thinner Drug in Collaboration With Abbott.
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
@@ -311,7 +312,7 @@ return(
                     height={60}
                     className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
-                  Phase 3 Clinical Trials Underway, FDA Fast-Tracked Drug
+                  Phase 3 Clinical Trials Underway, FDA Fast-Tracked Drug.
                 </li>
               </ul>
               <ul className="space-y-3 text-[#fff] w-full md:w-[54%] font-MontserratMedium text-base lg:text-lg 2xl:text-xl">
@@ -323,7 +324,7 @@ return(
                     height={60}
                     className="w-[1.4rem] h-[1.4rem] xl:w-[2rem] xl:h-[2rem]"
                   />
-                  CVKD Named Anticoagulation Therapy Company of the Year by Pharma Tech Outlook
+                  CVKD Named Anticoagulation Therapy Company of the Year by Pharma Tech Outlook.
                 </li>
                 <li className="flex items-start gap-2">
                   <Image
@@ -333,7 +334,7 @@ return(
                     height={60}
                     className="w-[1.3rem] h-[1.3rem] xl:w-[2rem] xl:h-[2rem]"
                   />
-                  Targeting a $2 billion US market and addressing a critical unmet medical need in cardiovascular care during a global health crisis
+                  Targeting a $2 billion US market and addressing a critical unmet medical need in cardiovascular care.
                 </li>
               </ul>
             </div>
@@ -365,41 +366,51 @@ return(
             </div>
 
             <div className="flex items-center justify-center md:gap-4 gap-2 mt-8 flex-wrap">
-              <Image
-                src="/images/fiedelity.png"
-                alt="Fidelity"
-                width={60}
-                height={60}
-                className="max-md:w-12 max-md:h-12"
-              />
-              <Image
-                src="/images/charles schwan.png"
-                alt="Charles Schwab"
-                width={60}
-                height={60}
-                className="max-md:w-12 max-md:h-12"
-              />
-              <Image
-                src="/images/3.png"
-                alt="Logo 3"
-                width={60}
-                height={60}
-                className="max-md:w-12 max-md:h-12"
-              />
-              <Image
-                src="/images/4.png"
-                alt="Webull"
-                width={60}
-                height={60}
-                className="max-md:w-12 max-md:h-12"
-              />
-              <Image
-                src="/images/5.png"
-                alt="Webull"
-                width={60}
-                height={60}
-                className="max-md:w-12 max-md:h-12"
-              />
+              <Link href='https://digital.fidelity.com/prgw/digital/research/quote/dashboard/summary?symbol=CVKD'>
+                <Image
+                  src="/images/fiedelity.png"
+                  alt="Fidelity"
+                  width={60}
+                  height={60}
+                  className="max-md:w-12 max-md:h-12"
+                />
+              </Link>
+              <Link href='https://www.schwab.com/'>
+                <Image
+                  src="/images/charles schwan.png"
+                  alt="Charles Schwab"
+                  width={60}
+                  height={60}
+                  className="max-md:w-12 max-md:h-12"
+                />
+              </Link>
+              <Link href='https://www.etrade.wallst.com/v1/stocks/snapshot/snapshot.asp?symbol=cvkd&rsO=new'>
+                <Image
+                  src="/images/3.png"
+                  alt="Logo 3"
+                  width={60}
+                  height={60}
+                  className="max-md:w-12 max-md:h-12"
+                />
+              </Link>
+              <Link href='https://robinhood.com/us/en/stocks/cvkd/'>
+                  <Image
+                    src="/images/4.png"
+                    alt="Webull"
+                    width={60}
+                    height={60}
+                    className="max-md:w-12 max-md:h-12"
+                  />
+              </Link>
+              <Link href='https://www.webull.com/quote/nasdaq-cvkd'>
+                <Image
+                  src="/images/5.png"
+                  alt="Webull"
+                  width={60}
+                  height={60}
+                  className="max-md:w-12 max-md:h-12"
+                />
+              </Link>
             </div>
             </div>
           </section>
@@ -428,7 +439,7 @@ return(
                     Phase 3 Trial Success
                   </li>
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
-                    CVKD’s Tecarfarin is heading to Phase 3, where positive results could validate its effectiveness and boost the stock.
+                    CVKD’s Tecarfarin is heading to Phase 3, where positive results could validate its effectiveness.
                   </p>
                   <li className="flex items-center gap-2 text-xl 2xl:text-3xl md:text-2xl font-MontserratSemi">
                     <Image
@@ -441,7 +452,7 @@ return(
                     Key Catalysts Ahead
                   </li>
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
-                    With upcoming trial results and potential FDA approval, CVKD is poised for strong gains, offering a prime trading opportunity.
+                    With upcoming trial results and potential FDA approval, CVKD is poised for growth.
                   </p>
                 </ul>
               </div>
@@ -507,7 +518,7 @@ return(
                     $2 Billion Target
                   </li>
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[0rem] md:pr-[0rem] pl-[2rem] pb-[1rem]">
-                    Tecarfarin is gearing up to dominate a massive $2 billion market. This isn’t just another player; it’s the one everyone’s going to chase.
+                    Tecarfarin is positioned to enter a significant $2 billion market, presenting a notable opportunity for growth and market impact.
                   </p>
                   <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
@@ -520,7 +531,7 @@ return(
                     FDA Fast-Track
                   </li>
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[0rem] md:pr-[0rem] pl-[2rem] pb-[1rem]">
-                    With the FDA fast-tracking approval, Tecarfarin is on the brink of exploding onto the scene. This is the kind of opportunity that can turn the market on its head.
+                    Tecarfarin has received FDA fast-track designation, highlighting its potential importance in addressing unmet medical needs.
                   </p>
                 </ul>
               </div>
@@ -548,7 +559,7 @@ return(
               <div className="w-full md:w-[55%] py-8 md:py-16 px-6 md:pr-8 flex flex-col gap-6 text-center md:text-left">
                 <p className="font-MontserrarMI text-[#fff]">&#8213; Alert!</p>
                 <h1 className="text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
-                  Sign Up Now For Exclusive Stock Picks
+                  Get Winning Stock Picks Straight to Your Inbox!
                 </h1>
                 {!done && (
                   <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[70%] mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-4">
@@ -558,13 +569,13 @@ return(
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="placeholder:text-[#1E1E1F] border border-solid border-[#0A84EF] bg-[#E3F2FF] px-4 py-2 xl:py-3 w-full rounded text-[#000] focus:outline-none"
+                      className="placeholder:text-[#1E1E1F] border border-solid border-[#0A84EF] bg-[#E3F2FF] px-4 py-2 xl:py-3 flex-grow rounded text-[#000] focus:outline-none"
                     />
                     <button
                       type="submit"
-                      className="px-6 py-2 xl:py-3 font-MontserratRegular rounded font-semibold bg-[#0A84EF] text-[#fff] w-full md:w-auto"
+                      className="px-3 py-2 xl:py-3 text-base font-MontserratRegular rounded font-semibold bg-[#0A84EF] text-[#fff] w-full md:w-max"
                     >
-                      Submit
+                      Get My Stock Picks Now
                     </button>
                   </form>
                 )}
@@ -697,7 +708,7 @@ return(
 
           <section>
             <div className="xl:container mx-auto 2xl:py-20 xl:py-10 xl:px-4 px-8">
-              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratBold text-center mb-6 lg:mb-[2.5rem]">
+              {/* <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratBold text-center mb-6 lg:mb-[2.5rem]">
                 Aligned with industry giants like Abbott
               </h1>
               <h4 className="text-center font-MontserratSemi text-xl lg:text-2xl 2xl:text-3xl mb-4 lg:mb-[1rem]">
@@ -706,7 +717,7 @@ return(
               <p className="text-[#474747] text-center text-base md:text-xl xl:text-2xl leading-[1.5] px-4 lg:px-[8rem]">
                 Cadrenal Therapeutics is poised to soar with its breakthrough drug, and relentless focus on unmet medical needs. 
                 As it nails clinical trials and speeds through approvals, CVKD is the biotech opportunity of a lifetime.
-              </p>
+              </p> */}
               <div className="w-full my-10 lg:my-20 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
                 {/* Left Widget */}
                 <div className="w-full lg:w-[48%] h-[20rem] lg:h-[30rem] border border-solid border-[#dddddd] rounded-2xl overflow-hidden">
@@ -859,11 +870,11 @@ return(
                       <p className="text-xs text-[#96A0B5] font-MontserratRegular">
                         By submitting this form and signing up for texts, you consent to receive marketing text messages (e.g., promos, cart reminders)
                         from Relqo Media at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available).{" "}
-                        <a href="#" className="text-[#0A84EF] text-[0.8rem] underline font-MontserratSemi">
+                        <a href="/policy" className="text-[#0A84EF] text-[0.8rem] underline font-MontserratSemi">
                           Privacy Policy
                         </a>{" "}
                         &{" "}
-                        <a href="#" className="text-[#0A84EF] text-[0.8rem] font-MontserratSemi underline">
+                        <a href="/terms" className="text-[#0A84EF] text-[0.8rem] font-MontserratSemi underline">
                           Terms
                         </a>
                         .
@@ -883,9 +894,9 @@ return(
 
               {/* Right Section - Offices and Social */}
               <div className="w-full lg:w-[48%]">
-                <h4 className="text-[1.3rem] text-[#fff] font-MontserratRegular italic mb-8">
+                {/* <h4 className="text-[1.3rem] text-[#fff] font-MontserratRegular italic mb-8">
                   — Our Offices
-                </h4>
+                </h4> */}
                 {/* Offices */}
                 <div className="flex flex-col lg:flex-row lg:justify-between pb-[3rem] mb-[2rem] border-b border-[#404040] space-y-10 lg:space-y-0">
                   <div className="lg:text-left w-full lg:w-[48%]">
@@ -900,10 +911,11 @@ return(
                       USA
                     </p>
                     <p className="text-[#aaa] font-MontserratRegular text-[1rem] pb-2">
-                      Lorem Ipsum is simply dummy 1322 2548 Lorem Ipsum
+                    1309 coffeen ave suite 1200
                     </p>
                     <p className="text-[#aaa] font-MontserratRegular text-[1rem]">
-                      +00 (00) 0102-12345 <br />
+                    sheridan wyoming 84403
+                    <br />
                       <a href="https://www.stockverse.com" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
                         www.stockverse.com
                       </a>
@@ -913,8 +925,8 @@ return(
                     <h4 className="font-MontserratSemi text-[1.5rem] text-[#fff] flex items-center gap-3 pb-2">Inquiries</h4>
                     <p className="text-gray-400 text-sm mb-6 flex item-center gap-2">
                     <FaEnvelope size={20} color="#c0c0c0" />
-                      <a href="mailto:stockverse@gmail.com" className="text-[#aaa] font-MontserratRegular text-[1rem] pb-2 underline">
-                        stockverse@gmail.com
+                      <a href="mailto:support@stockverse.com" className="text-[#aaa] font-MontserratRegular text-[1rem] pb-2 underline">
+                        support@stockverse.com
                       </a>
                     </p>
                   </div>
@@ -926,19 +938,19 @@ return(
                     — Follow Us
                   </h4>
                   <div className="flex lg:justify-start space-x-4 text-2xl text-gray-400">
-                    <a href="#" className="text-[#fff] hover:text-[#d2cecd]">
+                    <a href="https://www.facebook.com/profile.php?id=61556580840606" className="text-[#fff] hover:text-[#d2cecd]">
                       <FaFacebook />
                     </a>
-                    <a href="#" className="text-[#fff] hover:text-[#d2cecd]">
+                    <a href="https://x.com/StockVerseAI" className="text-[#fff] hover:text-[#d2cecd]">
                       <FaTwitter />
                     </a>
-                    <a href="#" className="text-[#fff] hover:text-[#d2cecd]">
+                    <a href="https://www.instagram.com/Stockverse.ai?fbclid=IwY2xjawIPLylleHRuA2FlbQIxMAABHSUdQnEM3uSGxUyLLa4LT0rgf7Zts_N-z36uR9yJlVLC9Nwx255wsE8Teg_aem_3U9gYDg8Fu5a8qJoYl9lgg" className="text-[#fff] hover:text-[#d2cecd]">
                       <FaInstagram />
                     </a>
-                    <a href="#" className="text-[#fff] hover:text-[#d2cecd]">
+                    <a href="https://www.linkedin.com/company/stockverseai/" className="text-[#fff] hover:text-[#d2cecd]">
                       <FaLinkedin />
                     </a>
-                    <a href="#" className="text-[#fff] hover:text-[#d2cecd]">
+                    <a href="https://www.youtube.com/@StockVerse.com1" className="text-[#fff] hover:text-[#d2cecd]">
                       <FaYoutube />
                     </a>
                   </div>
@@ -965,9 +977,9 @@ return(
                     Quick Links
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Stockverse GPT</a></li>
-                    <li><a href="">Stock Picks</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/stockverse-gpt">Stockverse GPT</a></li>
+                    {/* <li><a href="/stockpicks">Stock Picks</a></li> */}
                   </ul>
                 </div>
                 {/* Market */}
@@ -976,9 +988,9 @@ return(
                     Market
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
-                    <li><a href="">Gainers/Losers</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">IPO Calendar</a></li>
+                    <li><a href="/gainers&losers">Gainers/Losers</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/ipo-calendar">IPO Calendar</a></li>
                   </ul>
                 </div>
                 {/* Contact */}
@@ -987,8 +999,8 @@ return(
                     Contact
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
-                    <li><a href="">Email Us</a></li>
-                    <li><a href="">Send Us Feedback</a></li>
+                    <li><a href="mailto:support@stockverse.com">Email Us</a></li>
+                    <li><a href="/feedback">Send Us Feedback</a></li>
                   </ul>
                 </div>
               </div>
@@ -998,19 +1010,64 @@ return(
                 </p>
                 <ul className="text-[#aaa] text-[0.9rem] md:text-xl font-MontserratRegular sm:flex-row flex items-center flex-wrap gap-4">
                   <li className="border-0 sm:border-r-2 border-[#fafafa] sm:pr-4 pr-0">
-                    <a href="">Disclaimer</a>
+                    <a href="/disclaimer">Disclaimer</a>
                   </li>
                   <li className="border-0 sm:border-r-2 border-[#fafafa] px-0 sm:px-4">
-                    <a href="">Terms of Service</a>
+                    <a href="/terms">Terms of Service</a>
                   </li>
                   <li className="border-0 sm:border-r-2 border-[#fafafa] px-0 sm:px-4">
-                    <a href="">Privacy Policy</a>
+                    <a href="/policy">Privacy Policy</a>
                   </li>
-                  <li className="sm:pl-4 px-0 sm:px-4"><a href="">Refund Policy</a></li>
+                  <li className="sm:pl-4 px-0 sm:px-4"><a href="refund-policy">Refund Policy</a></li>
                 </ul>
               </div>
             </div>
           </footer>
+
+          <div className="px-6 pt-12 max-sm:px-3 mx-auto xl:container gap-y-4 max-sm:gap-y-3 flex flex-col items-start">
+            <h1 className="text-3xl font-sansSemibold text-primaryText">Disclaimer</h1>
+            <p className="text-lg font-sansMedium text-primaryText">
+              Effective Date: [August, 2024]
+            </p>
+            <p className="text-base text-primaryText">{`This website/newsletter is owned, operated, and edited by Relqo Media LLC. Any wording found in this email or disclaimer referencing "I," "we," "our," or "Relqo Media" refers to Relqo Media LLC. This webpage/newsletter is a paid advertisement, not a recommendation or an offer to buy or sell securities. Our business model is to be financially compensated to market and promote small public companies. By reading our newsletter and our website, you agree to the terms of our disclaimer, which are subject to change at any time.`}</p>
+            <p className="text-base text-primaryText">We are not registered or licensed in any jurisdiction to provide investing advice or any advisory or consultancy services, and are therefore unqualified to give investment recommendations. Always conduct your own research and consult with a licensed investment professional before investing. This communication is never to be used as the basis for making investment decisions and is for entertainment purposes only. At most, this communication should serve as a starting point to conduct your own research and consult with a licensed professional regarding the companies profiled and discussed.</p>
+            <p className="text-base text-primaryText">Conduct your own research. Companies with a low price per share are speculative and carry a high degree of risk, so only invest what you can afford to lose. By using our service, you agree not to hold our site, its editors, owners, or staff liable for any damages, financial or otherwise, that may occur due to any action you may take based on the information contained within our newsletters or on our website.</p>
+            <p className="text-base text-primaryText">We do not advise any reader to take any specific action. Losses can be larger than expected if the company experiences issues with liquidity or wide spreads. Our website and newsletter are for entertainment purposes only. Never invest purely based on our alerts. Gains mentioned in our newsletter and on our website may be based on end-of-day or intraday data.</p>
+            <p className="text-base text-primaryText">{`This publication, its owners, and affiliates may hold positions in the securities mentioned in our alerts, which we may sell at any time without notice to our subscribers, potentially impacting share prices. If we own any shares, we will list the relevant stock information and the number of shares here. Relqo Media LLC's business model is to receive financial compensation to promote public companies.`}</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Purpose</h2>
+            <p className="text-base text-primaryText">These websites, social media accounts, and all associated content are provided for informational and entertainment purposes only. Relqo Media LLC engages in marketing, advertising, and brand awareness for small-cap public companies. The content, including articles, emails, tweets, and other communications across our platforms, is classified as paid advertisements and should not be considered an offer, recommendation, or solicitation to buy or sell securities. Readers and users should not rely on the information provided as a basis for making investment decisions.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Compensation Disclosure</h2>
+            <p className="text-base text-primaryText">Relqo Media LLC is compensated for its promotional services, and this compensation may include cash payments, stock options, or other financial consideration from the companies we feature. The compensation received directly impacts the content presented on our platforms and creates a significant conflict of interest.</p>
+            <p className="text-base text-primaryText"><span className="font-sansSemibold">SRM Entertainment:</span> Relqo Media LLC has been compensated up to $250,000 to conduct a marketing campaign for SRM Entertainment between March and October 2024.Cadrenal Therapeutics: Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until February 1, 2024, bringing the total compensation to $500,000.</p>
+            <p className="text-base text-primaryText"><span className="font-sansSemibold">Cadrenal Therapeutics:</span> Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until January 1st , 2024, bringing the total compensation to $500,000.</p>
+            <p className="text-base text-primaryText"><span className="font-sansSemibold">NeoVolta Inc:</span> Relqo Media LLC has been compensated $400,000 starting November 11, 2024, to run a 90-day marketing campaign for NeoVolta Inc. Compensation represents a major conflict of interest in our ability to remain unbiased. Therefore, this communication should be viewed as a commercial advertisement only.</p>
+            <p className="text-base text-primaryText">We have not investigated the background of the hiring third party or parties. The third party, profiled company, or their affiliates may wish to liquidate shares of the profiled company at or near the time you receive this communication, which could negatively impact share prices. Any non-compensated alerts are purely for the purpose of expanding our database for future financially compensated investor relations efforts. Frequently, companies profiled in our alerts may experience a significant increase in volume and share price during investor relations marketing, which may decline as soon as the marketing ceases.</p>
+            <p className="text-base text-primaryText">Our emails may contain forward-looking statements, which are not guaranteed to materialize due to a variety of factors. We do not guarantee the timeliness, accuracy, or completeness of the information on our site or in our newsletters. The information in our email newsletters and on our website is believed to be accurate and correct but has not been independently verified and is not guaranteed.</p>
+            <p className="text-base text-primaryText">{`The information is collected from public sources, such as the profiled company’s website and press releases, but is not researched or verified in any way to ensure its accuracy. Furthermore, Relqo Media often employs independent contractor writers who may make errors when researching information and preparing these communications regarding profiled companies. While independent writers' works are reviewed and edited before publication, errors or omissions may occur. You should assume all information in our communications is incorrect until you verify it yourself and are encouraged never to invest based solely on the information contained in our communications.`}</p>
+            <p className="text-base text-primaryText">The information in this disclaimer is subject to change at any time without notice.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">No Investment Advice</h2>
+            <p className="text-base text-primaryText">Relqo Media LLC, its officers, employees, and affiliates, are not registered investment advisors or brokers and are not licensed to provide financial, investment, legal, or tax advice. The information provided is strictly for informational purposes and should not be interpreted as personalized investment advice. Always consult a licensed professional for any financial or investment-related decisions.</p>
+            <p className="text-base text-primaryText">Investors should be aware that investing in stocks, especially penny stocks, is highly speculative and involves substantial risk, including the potential loss of some or all of your investment. Do not Buy or sell based off this page. </p>
+            
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Risk Acknowledgment</h2>
+            <p className="text-base text-primaryText">The content featured on these platforms involves high-risk securities, including penny stocks. These securities may be volatile and illiquid, making it difficult to buy or sell positions. The possibility exists that you may lose some or all of your investment, and you should only invest funds you can afford to lose. Past performance is not indicative of future results, and individual results may vary significantly.</p>
+            
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Forward-Looking Statements</h2>
+            <p className="text-base text-primaryText">Certain statements on our websites, social media accounts, and communications may contain forward-looking statements based on current expectations, estimates, and projections. These statements may involve risks, uncertainties, and assumptions that could cause actual results to differ materially from those expressed or implied. Relqo Media LLC undertakes no obligation to update or revise any forward-looking statements after their publication, even if new information or future events make these statements inaccurate or outdated.</p>
+            
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Jurisdiction and Governing Law</h2>
+            <p className="text-base text-primaryText">This disclaimer, along with any disputes arising from its content or use of our websites and social media platforms, shall be governed by the laws of the State of Wyoming, without regard to conflict of law principles. All legal actions arising out of or connected with this disclaimer must be brought exclusively in Wyoming state or federal courts.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Limitation of Liability</h2>
+            <p className="text-base text-primaryText">Relqo Media LLC, its officers, directors, employees, and affiliates shall not be held liable for any direct, indirect, incidental, special, or consequential damages arising from the use or inability to use the content provided on these platforms. This includes, but is not limited to, trading losses, lost profits, and damages resulting from inaccuracies, omissions, or misinterpretations of the information provided.</p>
+            <p className="text-base text-primaryText">While we make every effort to ensure the accuracy of the information provided, Relqo Media LLC cannot guarantee that the information is free from errors or omissions. We strongly encourage all users to conduct their own research and consult with licensed professionals before making any investment decisions.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Third-Party Links and Content</h2>
+            <p className="text-base text-primaryText">These platforms may contain links to external websites, articles, and other third-party content. Relqo Media LLC does not endorse, control, or verify the accuracy or reliability of any third-party content, and the inclusion of such links does not imply any form of association or endorsement. Users access these links at their own risk.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">User Consent</h2>
+            <p className="text-base text-primaryText">By accessing and using stockverse.ai, stockverse.io, stockverse.com, or any associated social media platforms, users acknowledge that they have read, understood, and agree to be bound by the terms and conditions set forth in this disclaimer. If you do not agree to these terms, you must discontinue use of the platforms immediately.</p>
+            <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Changes to Disclaimer</h2>
+            <p className="text-base text-primaryText">Relqo Media LLC reserves the right to amend or modify this disclaimer at any time, without prior notice. Any changes will be effective immediately upon posting to the websites or social media platforms. Users are responsible for periodically reviewing the disclaimer for updates, and continued use of the platforms constitutes acceptance of any changes.</p>
+            <p className="text-base text-primaryText">The information provided in this content, including but not limited to references to Cadrenal Therapeutics (CVKD), Tecarfarin, clinical trials, market projections, and FDA approvals, is for informational purposes only. Relqo Media LLC, the owner and operator of Stockverse.com, does not guarantee the accuracy, completeness, or reliability of the information provided.</p>
+          </div>
 
           {isVisible &&           <section className="bg-[#EF0F6AF5] py-4 px-2 sticky bottom-0 z-10">
             <div className="w-[2rem] h-[2rem] bg-[#EF0F6AF5] absolute right-[10%] top-[-25%] rounded-full text-[#fff] shadow flex items-center justify-center cursor-pointer" onClick={() => setIsVisible(false)}><p>&#10539;</p></div>
