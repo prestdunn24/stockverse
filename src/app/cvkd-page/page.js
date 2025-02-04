@@ -20,9 +20,11 @@ const Cvkd = ()=> {
   const [message, setMessage] = useState(null);
   const [done, setDone] = useState(null);
   const [loading, setLoading] = useState(null);
+  const [isVisible, setIsVisible] = useState(true);
   const containerRef3 = useRef();
   const containerRef = useRef();
   const containerRef2 = useRef();
+
   
   useEffect(() => {
     // Clear the container to avoid duplication on re-renders
@@ -446,7 +448,7 @@ return(
             </div>
           </section>
 
-          <section className="bg-[#000] bg-cvkd-bg-1sm lg:bg-cvkd-bg-1 bg-[length:100%_100%] lg:bg-[length:67%_100%] bg-left bg-no-repeat">
+          <section className="bg-[#000] bg-cvkd-bg-1sm lg:bg-cvkd-bg-1 bg-[length:100%_50%] sm:bg-[length:86%_100%] md:bg-[length:80%_100%] lg:bg-[length:67%_100%] bg-left-bottom bg-no-repeat">
             <div className="xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8 flex flex-col md:flex-row justify-end">
             <div className="w-full md:w-[60%] text-end">
               <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
@@ -486,9 +488,9 @@ return(
             </div>
           </section>
 
-          <section className="bg-[#000]  lg:relative lg:h-[48rem] bg-[length:55%_100%] bg-right bg-no-repeat">
+          <section className="bg-[#000]">
             <div className="flex flex-col lg:flex-row xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
-            <div className="w-full lg:w-[60%]">
+            <div className="w-full lg:w-[50%]">
               <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
                 Unrivaled Market Opportunity
               </h1>
@@ -504,7 +506,7 @@ return(
                     />
                     $2 Billion Target
                   </li>
-                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[0rem] md:pr-[0rem] pl-[2rem] pb-[1rem]">
                     Tecarfarin is gearing up to dominate a massive $2 billion market. This isn’t just another player; it’s the one everyone’s going to chase.
                   </p>
                   <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
@@ -517,14 +519,14 @@ return(
                     />
                     FDA Fast-Track
                   </li>
-                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[0rem] md:pr-[0rem] pl-[2rem] pb-[1rem]">
                     With the FDA fast-tracking approval, Tecarfarin is on the brink of exploding onto the scene. This is the kind of opportunity that can turn the market on its head.
                   </p>
                 </ul>
               </div>
             </div>
-            <div className="w-full lg:w-[55%] lg:absolute top-[50%] sm:top-[45%] right-[0%] lg:right-0 lg:top-0 flex flex-col items-center justify-center">
-              <Image className="w-[80%]" src="/images/bull.png" alt="bull" width={1483} height={1229}/>
+            <div className="w-full lg:w-[50%] flex flex-col items-center justify-center">
+              <Image className="w-[100%] lg:mt-[-4rem]" src="/images/bull.png" alt="bull" width={1483} height={1229}/>
             </div>
             </div>
           </section>
@@ -761,9 +763,9 @@ return(
                           {/* Right Section: Feedback */}
                           <div className="lg:text-left">
                             <p className="font-MontserratRegular text-base md:text-xl xl:text-2xl text-[#474747] leading-[140%] lg:leading-[120%] mb-4 lg:mb-20 relative">
-                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute left-[-10%] lg:top-[-0.3rem] lg:left-[-6%]">&#10077;</span>
+                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute left-[-2.5rem] lg:top-[-0.3rem] lg:left-[-6%]">&#10077;</span>
                               {testimonial.feedback}
-                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute bottom-[-1rem] right-[0%] lg:bottom-[-2rem] lg:right-[0%]">&#10078;</span>
+                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute bottom-[-1rem] right-[-1rem] lg:bottom-[-2rem] lg:right-[0%]">&#10078;</span>
                             </p>
                             <h4 className="text-[1.2rem] lg:text-[1.4rem] font-MontserratSemi">{testimonial.name}</h4>
                             <p className="text-[1.2rem] lg:text-[1.5rem] text-[#474747]">{testimonial.position}</p>
@@ -783,7 +785,7 @@ return(
               <p className="font-MontserrarMedium l text-center text-[#fff]">
                 &#8213; Join StockVerse Alerts Today!
               </p>
-              <h1 className="text-[2rem] lg:text-[3.2rem] font-MontserratSemi leading-[130%] lg:leading-[120%] pb-4 lg:pb-6 text-center text-[#fff]">
+              <h1 className="text-[1.5rem] lg:text-[3.2rem] font-MontserratSemi leading-[130%] lg:leading-[120%] pb-4 lg:pb-6 text-center text-[#fff]">
                 Winning Stock Picks Sent To Inbox
               </h1>
               <p className="font-MontserratRegular text-base md:text-xl xl:tetx-2xl text-[#fff] px-4 lg:px-[5rem] leading-[150%] lg:leading-[120%] text-center">
@@ -794,7 +796,7 @@ return(
           </section>
 
           <section className="w-full bg-[#000] pt-[4rem] xl:pt-[8rem] mt-[-5rem] xl:mt-[-7rem]">
-            <div className="w-full xl:container py-28 xl:px-0 px-8 mx-auto flex flex-col lg:flex-row lg:justify-between border-b border-solid border-[#404040] space-y-10 lg:space-y-0">
+            <div className="w-full xl:container py-28 xl:px-0 md:px-40 lg:px-20 px-8 mx-auto flex flex-col lg:flex-row lg:justify-between border-b border-solid border-[#404040] space-y-10 lg:space-y-0">
               {/* Left Section - Sign Up */}
               <div className="w-full lg:w-[48%]">
                 <div className="bg-[#111111] border border-solid border-[#404040] p-6 sm:p-8 rounded-2xl shadow-lg">
@@ -946,7 +948,7 @@ return(
           </section>
 
           <footer className="bg-[#000] py-12">
-            <div className="xl:container mx-auto px-8 xl:px-4">
+            <div className="xl:container mx-auto px-8">
               <div className="flex flex-wrap justify-between gap-8">
                 {/* Description Section */}
 
@@ -990,27 +992,28 @@ return(
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-wrap items-center justify-between mt-[4rem] border-t border-[#404040] pt-[2rem] gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between justify-center mt-[4rem] border-t border-[#404040] pt-[2rem] gap-4">
                 <p className="text-[#aaa] text-base md:text-xl">
                   © 2024 Stockverse, All rights reserved.
                 </p>
-                <ul className="text-[#aaa] text-[0.8rem] md:text-xl font-MontserratRegular flex flex-wrap">
-                  <li className="border-r-2 border-[#fafafa] pr-4">
+                <ul className="text-[#aaa] text-[0.9rem] md:text-xl font-MontserratRegular sm:flex-row flex items-center flex-wrap gap-4">
+                  <li className="border-0 sm:border-r-2 border-[#fafafa] sm:pr-4 pr-0">
                     <a href="">Disclaimer</a>
                   </li>
-                  <li className="border-r-2 border-[#fafafa] px-4">
+                  <li className="border-0 sm:border-r-2 border-[#fafafa] px-0 sm:px-4">
                     <a href="">Terms of Service</a>
                   </li>
-                  <li className="border-r-2 border-[#fafafa] px-4">
+                  <li className="border-0 sm:border-r-2 border-[#fafafa] px-0 sm:px-4">
                     <a href="">Privacy Policy</a>
                   </li>
-                  <li className="pl-0 sm:pl-4"><a href="">Refund Policy</a></li>
+                  <li className="sm:pl-4 px-0 sm:px-4"><a href="">Refund Policy</a></li>
                 </ul>
               </div>
             </div>
           </footer>
 
-          <section className="bg-[#EF0F6AF5] py-4 px-2">
+          {isVisible &&           <section className="bg-[#EF0F6AF5] py-4 px-2 sticky bottom-0 z-10">
+            <div className="w-[2rem] h-[2rem] bg-[#EF0F6AF5] absolute right-[10%] top-[-25%] rounded-full text-[#fff] shadow flex items-center justify-center cursor-pointer" onClick={() => setIsVisible(false)}><p>&#10539;</p></div>
             <div className="flex flex-col md:flex-row justify-center items-center gap-6">
               <p className="text-[#fff] text-center md:text-left max-md:hidden">
                 Confidential stock report by March 1st, 2025.
@@ -1040,7 +1043,7 @@ return(
                 </div>
                 )}
             </div>
-          </section>
+          </section>}
 
         </>
 )};
