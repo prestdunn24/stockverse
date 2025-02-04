@@ -147,31 +147,31 @@ const Cvkd = ()=> {
   const testimonials = [
     {
       id: 1,
-      name: "Shawn wing",
-      position: "Director, People & Communities, Cisco",
+      name: "John D",
+      position: "Investor",
       feedback:
-        "Randstad RiseSmart delivers talent mobility within and outside the company by providing solutions across the entire employee lifecycle, seamlessly putting the employee front and center, aligning with our conscious culture, giving us full visibility and transparency status, and showing the return on the investment we are making.",
+        "StockVerse.ai has transformed the way I approach the market. The accuracy of their stock picks is unparalleled.",
     },
     {
       id: 2,
-      name: "Shawn wing",
-      position: "Director, People & Communities, Cisco",
+      name: " Sarah K",
+      position: "Trader",
       feedback:
-        "Randstad RiseSmart delivers talent mobility within and outside the company by providing solutions across the entire employee lifecycle, seamlessly putting the employee front and center, aligning with our conscious culture, giving us full visibility and transparency status, and showing the return on the investment we are making.",
+        "I appreciate the combination of AI technology and human expertise. It gives me confidence in my investment decisions.",
     },
     {
       id: 3,
-      name: "Shawn wing",
-      position: "Director, People & Communities, Cisco",
+      name: "Kim J",
+      position: "Investor",
       feedback:
-        "Randstad RiseSmart delivers talent mobility within and outside the company by providing solutions across the entire employee lifecycle, seamlessly putting the employee front and center, aligning with our conscious culture, giving us full visibility and transparency status, and showing the return on the investment we are making.",
+        "It offers insightful stock data with sleek design, aiding individuals with comprehensive information for informed decision-making.",
     },
     {
       id: 4,
-      name: "Shawn wing",
-      position: "Director, People & Communities, Cisco",
+      name: "Lucas T",
+      position: "Trader",
       feedback:
-        "Randstad RiseSmart delivers talent mobility within and outside the company by providing solutions across the entire employee lifecycle, seamlessly putting the employee front and center, aligning with our conscious culture, giving us full visibility and transparency status, and showing the return on the investment we are making.",
+        "Stockverse stands out as an invaluable asset for stakeholders, offering a wealth of resources and tools to navigate the stock market landscape with confidence and success.",
     },
   ];
 
@@ -289,7 +289,7 @@ return(
               Nasdaq: Cadrenal Therapeutics (CVKD)
             </p>
             <p className="font-MontserratSemi text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
-              {`This $17.30 Stock May SOAR 214.73%... Here's why.`}
+              {`This $19.36 Stock May SOAR 214.73%... Here's why.`}
             </p>
 
             <div className="w-full lg:w-[97%]  flex flex-col md:flex-row justify-between text-left mb-4">
@@ -1039,7 +1039,7 @@ return(
             <h2 className="mt-8 text-primaryText text-xl font-sansSemibold">Compensation Disclosure</h2>
             <p className="text-base text-primaryText">Relqo Media LLC is compensated for its promotional services, and this compensation may include cash payments, stock options, or other financial consideration from the companies we feature. The compensation received directly impacts the content presented on our platforms and creates a significant conflict of interest.</p>
             <p className="text-base text-primaryText"><span className="font-sansSemibold">SRM Entertainment:</span> Relqo Media LLC has been compensated up to $250,000 to conduct a marketing campaign for SRM Entertainment between March and October 2024.Cadrenal Therapeutics: Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until February 1, 2024, bringing the total compensation to $500,000.</p>
-            <p className="text-base text-primaryText"><span className="font-sansSemibold">Cadrenal Therapeutics:</span> Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 150-day marketing campaign for Cadrenal Therapeutics. This payment will continue until January 1st , 2024, bringing the total compensation to $500,000.</p>
+            <p className="text-base text-primaryText"><span className="font-sansSemibold">Cadrenal Therapeutics:</span> Relqo Media LLC has been compensated $50,000 per week since August 8, 2024, to run a 180-day marketing campaign for Cadrenal Therapeutics. This payment will continue until January 1st , 2024, bringing the total compensation to $500,000.</p>
             <p className="text-base text-primaryText"><span className="font-sansSemibold">NeoVolta Inc:</span> Relqo Media LLC has been compensated $400,000 starting November 11, 2024, to run a 90-day marketing campaign for NeoVolta Inc. Compensation represents a major conflict of interest in our ability to remain unbiased. Therefore, this communication should be viewed as a commercial advertisement only.</p>
             <p className="text-base text-primaryText">We have not investigated the background of the hiring third party or parties. The third party, profiled company, or their affiliates may wish to liquidate shares of the profiled company at or near the time you receive this communication, which could negatively impact share prices. Any non-compensated alerts are purely for the purpose of expanding our database for future financially compensated investor relations efforts. Frequently, companies profiled in our alerts may experience a significant increase in volume and share price during investor relations marketing, which may decline as soon as the marketing ceases.</p>
             <p className="text-base text-primaryText">Our emails may contain forward-looking statements, which are not guaranteed to materialize due to a variety of factors. We do not guarantee the timeliness, accuracy, or completeness of the information on our site or in our newsletters. The information in our email newsletters and on our website is believed to be accurate and correct but has not been independently verified and is not guaranteed.</p>
