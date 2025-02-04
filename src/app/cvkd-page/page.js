@@ -132,8 +132,6 @@ const Cvkd = ()=> {
         "isTransparent": false,
         "largeChartUrl": "",
         "displayMode": "regular",
-        "width" : 100%,
-        "height": 100%,
         "colorTheme": "light",
         "symbol": "NASDAQ:CVKD",
         "locale": "en"
@@ -448,14 +446,15 @@ return(
             </div>
           </section>
 
-          <section className="flex flex-col md:flex-row justify-end bg-[#000] bg-cvkd-bg-1sm lg:bg-cvkd-bg-1 bg-[length:100%_100%] lg:bg-[length:67%_100%] bg-left bg-no-repeat py-12 md:py-24 px-6 md:px-20">
+          <section className="bg-[#000] bg-cvkd-bg-1sm lg:bg-cvkd-bg-1 bg-[length:100%_100%] lg:bg-[length:67%_100%] bg-left bg-no-repeat">
+            <div className="xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8 flex flex-col md:flex-row justify-end">
             <div className="w-full md:w-[60%] text-end">
-              <h1 className="text-[#fff] text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] leading-[110%] font-semibold font-MontserratSemi mb-8 md:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
                 Unstoppable Cardiovascular Revolution
               </h1>
               <div>
                 <ul className="list-disc space-y-4 text-[#fff] w-full text-end">
-                  <li className="flex items-center gap-2 justify-end text-xl md:text-2xl font-MontserratSemi">
+                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -465,10 +464,10 @@ return(
                     />
                     Game-Changing Drug
                   </li>
-                  <p className="text-base md:text-xl font-MontserratRegular text-[#AAAAAA] pl-[3rem] md:pl-[10rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pl-[2rem] pb-[1rem]">
                     CVKD’s Tecarfarin isn’t just better—it’s the future, leaving competitors like warfarin in the dust.
                   </p>
-                  <li className="flex items-center gap-2 justify-end text-xl md:text-2xl font-MontserratSemi">
+                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -478,22 +477,24 @@ return(
                     />
                     Market Domination
                   </li>
-                  <p className="text-base md:text-xl font-MontserratRegular text-[#AAAAAA] pl-[3rem] md:pl-[10rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pl-[2rem] pb-[1rem]">
                     If approved, tecarfarin has the potential to be the only on-label drug for LVAD patients in the U.S.
                   </p>
                 </ul>
               </div>
             </div>
+            </div>
           </section>
 
-          <section className="flex flex-col lg:flex-row bg-[#000]  lg:relative lg:h-[40rem] bg-[length:55%_100%] bg-right bg-no-repeat py-12 md:py-24 px-6 md:px-20">
+          <section className="bg-[#000]  lg:relative lg:h-[48rem] bg-[length:55%_100%] bg-right bg-no-repeat">
+            <div className="flex flex-col lg:flex-row xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
             <div className="w-full lg:w-[60%]">
-              <h1 className="text-[#fff] text-[2rem] sm:text-[2.5rem] lg:text-[3.2rem] leading-[110%] font-semibold font-MontserratSemi mb-8 md:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
                 Unrivaled Market Opportunity
               </h1>
               <div>
                 <ul className="list-disc space-y-4 text-[#fff] w-full">
-                  <li className="flex items-center gap-2 text-xl md:text-2xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -503,10 +504,10 @@ return(
                     />
                     $2 Billion Target
                   </li>
-                  <p className="text-base lg:text-xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] lg:pr-[5rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
                     Tecarfarin is gearing up to dominate a massive $2 billion market. This isn’t just another player; it’s the one everyone’s going to chase.
                   </p>
-                  <li className="flex items-center gap-2 text-xl md:text-2xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -516,7 +517,7 @@ return(
                     />
                     FDA Fast-Track
                   </li>
-                  <p className="text-base md:text-xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] lg:pr-[5rem] pl-[2rem] pb-[1rem]">
+                  <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
                     With the FDA fast-tracking approval, Tecarfarin is on the brink of exploding onto the scene. This is the kind of opportunity that can turn the market on its head.
                   </p>
                 </ul>
@@ -525,201 +526,212 @@ return(
             <div className="w-full lg:w-[55%] lg:absolute top-[50%] sm:top-[45%] right-[0%] lg:right-0 lg:top-0 flex flex-col items-center justify-center">
               <Image className="w-[80%]" src="/images/bull.png" alt="bull" width={1483} height={1229}/>
             </div>
+            </div>
           </section>
 
-          <section className="flex flex-col md:flex-row items-center justify-between bg-cvkd-bg-4 bg-no-repeat bg-cover py-8 md:py-16">
-            {/* Left Image Section */}
-            <div className="w-full md:w-[40%] flex items-end justify-center md:justify-start pl-6 md:pl-8">
-              <Image
-                src="/images/alert-img.svg"
-                width={100}
-                height={100}
-                alt="alert-img"
-                className="w-[50%] md:w-[70%] mb-[-1.5rem] md:mb-[-2.2rem]"
-              />
-            </div>
+          <section className="bg-cvkd-bg-4 bg-no-repeat bg-cover py-8 md:py-16">
+            <div className="xl:container mx-auto flex flex-col md:flex-row items-center justify-between">
+              {/* Left Image Section */}
+              <div className="w-full md:w-[40%] flex items-end justify-center md:justify-start pl-6 md:pl-8">
+                <Image
+                  src="/images/alert-img.svg"
+                  width={100}
+                  height={100}
+                  alt="alert-img"
+                  className="w-[50%] md:w-[70%] mb-[-1.5rem] md:mb-[-2.2rem]"
+                />
+              </div>
 
-            {/* Right Content Section */}
-            <div className="w-full md:w-[55%] py-8 md:py-16 px-6 md:pr-8 flex flex-col gap-6 text-center md:text-left">
-              <p className="font-MontserrarMI text-[#fff]">&#8213; Alert!</p>
-              <h1 className="text-[2rem] md:text-[3.2rem] font-MontserratSemi leading-[120%] pb-4">
-                Sign Up Now For Exclusive Stock Picks
+              {/* Right Content Section */}
+              <div className="w-full md:w-[55%] py-8 md:py-16 px-6 md:pr-8 flex flex-col gap-6 text-center md:text-left">
+                <p className="font-MontserrarMI text-[#fff]">&#8213; Alert!</p>
+                <h1 className="text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+                  Sign Up Now For Exclusive Stock Picks
+                </h1>
+                {!done && (
+                  <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[70%] mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-4">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email"
+                      required
+                      className="placeholder:text-[#1E1E1F] border border-solid border-[#0A84EF] bg-[#E3F2FF] px-4 py-2 xl:py-3 w-full rounded text-[#000] focus:outline-none"
+                    />
+                    <button
+                      type="submit"
+                      className="px-6 py-2 xl:py-3 font-MontserratRegular rounded font-semibold bg-[#0A84EF] text-[#fff] w-full md:w-auto"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                )}
+                {done && (
+                  <div className="bg-[#fff] p-2 px-4 rounded-lg text-base font-sansMedium">
+                    {message}
+                  </div>
+                )}
+              </div>
+            </div>
+          </section>
+
+          <section className="bg-cvkd-bg-3">
+            <div className="xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+                Why Cadrenal Therapeutics is a Must-Watch Opportunity
               </h1>
-              {!done && (
-                <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[70%] mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-4">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
-                    required
-                    className="placeholder:text-[#1E1E1F] border border-solid border-[#0A84EF] bg-[#E3F2FF] px-4 py-2 w-full rounded text-[#000] focus:outline-none"
-                  />
-                  <button
-                    type="submit"
-                    className="px-6 py-2 font-MontserratRegular rounded font-semibold bg-[#0A84EF] text-[#fff] w-full md:w-auto"
-                  >
-                    Submit
-                  </button>
-                </form>
-              )}
-              {done && (
-                <div className="bg-[#fff] p-2 px-4 rounded-lg text-base font-sansMedium">
-                  {message}
+              <p className="text-center text-[#aaa] font-MontserratRegular px-6 lg:px-[5rem] text-base md:text-xl xl:text-2xl pt-2">
+                At Stockverse, we believe that CVKD is not just another player in the biotech industry—it is a game-changer. Here’s why:
+              </p>
+              <div className="mt-16 space-y-12">
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      01
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-5rem]">
+                      Groundbreaking Drug (Tecarfarin)
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Tecarfarin is on track to dominate the massive long-term anticoagulation market. Set to become the go-to choice for patients with atrial fibrillation, prosthetic heart valves, and recurrent VTE, this game-changing drug is ready to capture a multi-billion-dollar industry and leave competitors in the dust.
+                    </p>
+                  </div>
                 </div>
-              )}
-            </div>
-          </section>
-
-          <section className="px-6 lg:px-[5rem] py-16 bg-cvkd-bg-3">
-            <h1 className="text-center text-[#fff] font-MontserratSemi text-[2rem] lg:text-[3.2rem] leading-[110%]">
-              Why Cadrenal Therapeutics is a Must-Watch Opportunity
-            </h1>
-            <p className="text-center text-[#aaa] font-MontserratRegular px-6 lg:px-[4rem] text-[1rem] lg:text-[1.15rem] pt-2">
-              At Stockverse, we believe that CVKD is not just another player in the biotech industry—it is a game-changer. Here’s why:
-            </p>
-            <div className="mt-16 px-4 sm:px-8 space-y-12">
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    01
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-3rem]">
-                    Groundbreaking Drug (Tecarfarin)
-                  </h4>
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      02
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-6.5rem]">
+                      FDA Fast-Track Designation
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Accelerated Path to Market: The FDA’s Fast Track designation highlights Tecarfarin’s potential to meet an unmet medical need. This status not only speeds up its development and review process but also underscores its importance in advancing cardiovascular care.
+                    </p>
+                  </div>
                 </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] text-[0.8rem] md:text-[1rem] xl:text-[1.3rem]">
-                    Tecarfarin is on track to dominate the massive long-term anticoagulation market. Set to become the go-to choice for patients with atrial fibrillation, prosthetic heart valves, and recurrent VTE, this game-changing drug is ready to capture a multi-billion-dollar industry and leave competitors in the dust.
-                  </p>
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      03
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-6.4rem]">
+                      Innovative Drug Design
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Targeted Action: Tecarfarin is designed to be metabolized differently than traditional blood thinners, reducing the risk of drug-drug interactions and offering a potentially safer option for patients. This innovation could capture significant market share in the anticoagulant space.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    02
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-3.8rem]">
-                    FDA Fast-Track Designation
-                  </h4>
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      04
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-7.3rem]">
+                      Reduced Patient Burden
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Consistent Anticoagulation with Less Monitoring: Tecarfarin’s ability to provide more consistent anticoagulation reduces the need for frequent blood monitoring, which could improve patient adherence and satisfaction. This advantage may lead to strong adoption rates, particularly in complex patient populations.
+                    </p>
+                  </div>
                 </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] text-[0.8rem] md:text-[1rem] xl:text-[1.3rem]">
-                    Accelerated Path to Market: The FDA’s Fast Track designation highlights Tecarfarin’s potential to meet an unmet medical need. This status not only speeds up its development and review process but also underscores its importance in advancing cardiovascular care.
-                  </p>
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      05
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-6.5rem]">
+                      Phase 3 Clinical Trials
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Proven Potential: Ongoing Phase 3 trials are critical for assessing Tecarfarin’s efficacy and safety on a larger scale. Positive results from these trials could serve as a strong catalyst for the stock, attracting investor attention and driving the stock price upward.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    03
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-3.8rem]">
-                    Innovative Drug Design
-                  </h4>
-                </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] text-[0.8rem] md:text-[1rem] xl:text-[1.3rem]">
-                    Targeted Action: Tecarfarin is designed to be metabolized differently than traditional blood thinners, reducing the risk of drug-drug interactions and offering a potentially safer option for patients. This innovation could capture significant market share in the anticoagulant space.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    04
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-4.2rem]">
-                    Reduced Patient Burden
-                  </h4>
-                </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] text-[0.8rem] md:text-[1rem] xl:text-[1.3rem]">
-                    Consistent Anticoagulation with Less Monitoring: Tecarfarin’s ability to provide more consistent anticoagulation reduces the need for frequent blood monitoring, which could improve patient adherence and satisfaction. This advantage may lead to strong adoption rates, particularly in complex patient populations.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10 border-solid border-[#404040]">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    05
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-3.9rem]">
-                    Phase 3 Clinical Trials
-                  </h4>
-                </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] md:text-[1rem] xl:text-[1.3rem]">
-                    Proven Potential: Ongoing Phase 3 trials are critical for assessing Tecarfarin’s efficacy and safety on a larger scale. Positive results from these trials could serve as a strong catalyst for the stock, attracting investor attention and driving the stock price upward.
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10">
-                <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
-                  <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
-                    06
-                  </h1>
-                  <h4 className="text-lg md:text-2xl text-[#fff] sm:ml-[-4.1rem]">
-                    Strong Competitive Advantage
-                  </h4>
-                </div>
-                <div className="md:w-[65%]">
-                  <p className="text-[#aaaaaa] text-[0.8rem] md:text-[1rem] xl:text-[1.3rem]">
-                    Fewer Drug Interactions: Tecarfarin’s unique metabolism gives it a competitive edge over existing treatments like warfarin, especially for patients on multiple medications. This feature could drive preference among healthcare providers and patients, leading to robust sales growth.
-                  </p>
+                <div className="flex flex-col md:flex-row items-start md:items-center border-b pb-10">
+                  <div className="flex items-center md:w-[35%] mb-4 sm:mb-0">
+                    <h1 className="text-[rgba(0,0,0,0)] text-[4rem] md:text-[7rem] font-MontserratBold stroke-1">
+                      06
+                    </h1>
+                    <h4 className="text-lg md:text-2xl text-[#fff] md:ml-[-6.8rem]">
+                      Strong Competitive Advantage
+                    </h4>
+                  </div>
+                  <div className="md:w-[65%]">
+                    <p className="text-[#aaaaaa] text-base md:text-xl xl:text-2xl">
+                      Fewer Drug Interactions: Tecarfarin’s unique metabolism gives it a competitive edge over existing treatments like warfarin, especially for patients on multiple medications. This feature could drive preference among healthcare providers and patients, leading to robust sales growth.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
 
-          <section className='px-6 lg:px[5rem] bg-[#000] pt-8 pb-[15rem] bg-cvkd-bg-5'>
-            <h1 className='text-[2rem] lg:text-[3.2rem] font-MontserratSemi text-center text-[#fff]'>CEO Discusses the Groundbreaking Potential</h1>
-            <h1 className='text-[2rem] lg:text-[3.2rem] font-MontserratSemi text-center text-[#fff]'>of Tecarfarin for Cadrenal Therapeutics (CVKD)</h1>
+          <section className='bg-[#000] pt-8 pb-[12rem] bg-cvkd-bg-5'>
+            <div className="xl:container mx-auto 2xl:py-30 xl:py-20 py-8 px-8 xl:px-4">
+              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemi xl:mb-4'>CEO Discusses the Groundbreaking Potential</h1>
+              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemi'>of Tecarfarin for Cadrenal Therapeutics (CVKD)</h1>
+            </div>
           </section>
 
           <section className='mt-[-10rem] pb-16'>
-            <div className="w-[89%] h-[20rem] lg:h-[40rem] rounded m-auto pb-10]">
+            <div className="xl:container mx-auto 2xl:py-10 xl:px-4 px-8">
+            <div className="w-[100%] h-[20rem] lg:h-[40rem] rounded m-auto pb-10]">
             <iframe className='w-full h-full rounded-2xl' src="https://www.youtube.com/embed/MvQWFLvecho?si=mfcqD4AoWnLdNiJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+            </div>
           </section>
 
-          <section className="px-4 lg:px-8 py-10">
-            <h1 className="text-[2rem] lg:text-[3.2rem] font-MontserratBold text-center mb-6 lg:mb-[2.5rem]">
-              Aligned with industry giants like Abbott
-            </h1>
-            <h4 className="text-center font-MontserratSemi text-[1rem] lg:text-[1.3rem] mb-4 lg:mb-[1rem]">
-              Reasons to Consider CVKD
-            </h4>
-            <p className="text-[#474747] text-center text-[1rem] lg:text-[1.3rem] leading-[1.5] px-4 lg:px-[8rem]">
-              Cadrenal Therapeutics is poised to soar with its breakthrough drug, and relentless focus on unmet medical needs. 
-              As it nails clinical trials and speeds through approvals, CVKD is the biotech opportunity of a lifetime.
-            </p>
-            <div className="w-full my-10 lg:my-20 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
-              {/* Left Widget */}
-              <div className="w-full lg:w-[48%] h-[20rem] lg:h-[30rem] border border-solid border-[#dddddd] rounded overflow-hidden">
-                <div
-                  className="tradingview-widget-container"
-                  ref={containerRef}
-                  style={{ height: "100%", width: "100%" }}
-                >
-                  <div className="tradingview-widget-container__widget"></div>
+          <section>
+            <div className="xl:container mx-auto 2xl:py-20 xl:py-10 xl:px-4 px-8">
+              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratBold text-center mb-6 lg:mb-[2.5rem]">
+                Aligned with industry giants like Abbott
+              </h1>
+              <h4 className="text-center font-MontserratSemi text-xl lg:text-2xl 2xl:text-3xl mb-4 lg:mb-[1rem]">
+                Reasons to Consider CVKD
+              </h4>
+              <p className="text-[#474747] text-center text-base md:text-xl xl:text-2xl leading-[1.5] px-4 lg:px-[8rem]">
+                Cadrenal Therapeutics is poised to soar with its breakthrough drug, and relentless focus on unmet medical needs. 
+                As it nails clinical trials and speeds through approvals, CVKD is the biotech opportunity of a lifetime.
+              </p>
+              <div className="w-full my-10 lg:my-20 flex flex-col lg:flex-row items-center justify-center gap-6 lg:gap-10">
+                {/* Left Widget */}
+                <div className="w-full lg:w-[48%] h-[20rem] lg:h-[30rem] border border-solid border-[#dddddd] rounded-2xl overflow-hidden">
+                  <div
+                    className="tradingview-widget-containerl"
+                    ref={containerRef}
+                    style={{height: "100%", width: "100%"}}
+                  >
+                    <div className="tradingview-widget-container__widget"></div>
+                  </div>
                 </div>
-              </div>
-              {/* Right Widget */}
-              <div className="w-full lg:w-[48%] h-[20rem] lg:h-[30rem] border border-solid border-[#dddddd] rounded overflow-hidden">
-                <div
-                  className="tradingview-widget-container"
-                  ref={containerRef2}
-                  style={{ height: "100%", width: "100%" }}
-                ></div>
+                {/* Right Widget */}
+                <div className="w-full lg:w-[48%] h-[20rem] lg:h-[30rem] border border-solid border-[#dddddd] rounded-2xl overflow-hidden">
+                  <div
+                    className="tradingview-widget-container"
+                    ref={containerRef2}
+                    style={{width:"100%", height : "100%"}}
+                  ></div>
+                </div>
               </div>
             </div>
           </section>
 
 
-          <section className="px-6 lg:px-[5rem]">
-            <div className="flex flex-col items-center justify-center py-10">
-              <h1 className="text-center font-MontserratSemi text-[2rem] lg:text-[3.2rem] mb-6 lg:mb-[1rem]">
+          <section>
+            <div className="xl:container mx-auto xl:px-4 px-8 2xl:py-20 py-10 flex flex-col items-center justify-center py-10">
+              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratSemi text-center mb-6 lg:mb-[2.5rem]">
                 What Our Users Are Saying
               </h1>
               <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-8 lg:gap-0">
@@ -741,15 +753,15 @@ return(
                     slidesPerView={1}
                     pagination={{ clickable: true }}
                     modules={[Pagination]}
-                    className="h-[300px] lg:h-[500px] bg-white rounded-lg overflow-hidden"
+                    className="h-[400px] lg:h-[500px] bg-white rounded-lg overflow-hidden"
                   >
                     {testimonials.map((testimonial) => (
                       <SwiperSlide key={testimonial.id}>
                         <div className="flex flex-col lg:flex-row items-center h-full p-4 lg:pl-6">
                           {/* Right Section: Feedback */}
                           <div className="lg:text-left">
-                            <p className="font-MontserratRegular text-[1rem] lg:text-[1.3rem] text-[#474747] leading-[140%] lg:leading-[120%] mb-4 lg:mb-20 relative">
-                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute left-[-8%] lg:top-[-0.3rem] lg:left-[-6%]">&#10077;</span>
+                            <p className="font-MontserratRegular text-base md:text-xl xl:text-2xl text-[#474747] leading-[140%] lg:leading-[120%] mb-4 lg:mb-20 relative">
+                              <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute left-[-10%] lg:top-[-0.3rem] lg:left-[-6%]">&#10077;</span>
                               {testimonial.feedback}
                               <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute bottom-[-1rem] right-[0%] lg:bottom-[-2rem] lg:right-[0%]">&#10078;</span>
                             </p>
@@ -766,22 +778,22 @@ return(
           </section>
 
 
-          <section className="px-6 lg:px-[5rem] relative -z-1">
-            <div className="bg-[#0A84EF] py-8 lg:py-[2rem] rounded-3xl bg-cvkd-bg-6 bg-no-repeat bg-[100%_100%] bg-[length:100%_100%]">
-              <p className="font-MontserrarMedium text-base lg:text-[1.3rem] text-center text-[#fff]">
+          <section className="xl:container mx-auto px-8 xl:px-0 relative -z-1">
+            <div className="bg-[#0A84EF] px-2 py-8 xl:py-16 lg:py-[2rem] rounded-3xl bg-cvkd-bg-6 bg-no-repeat bg-[100%_100%] bg-[length:100%_100%]">
+              <p className="font-MontserrarMedium l text-center text-[#fff]">
                 &#8213; Join StockVerse Alerts Today!
               </p>
               <h1 className="text-[2rem] lg:text-[3.2rem] font-MontserratSemi leading-[130%] lg:leading-[120%] pb-4 lg:pb-6 text-center text-[#fff]">
                 Winning Stock Picks Sent To Inbox
               </h1>
-              <p className="font-MontserratRegular text-sm lg:text-[1.3rem] text-[#fff] px-4 lg:px-[5rem] leading-[150%] lg:leading-[120%] text-center">
+              <p className="font-MontserratRegular text-base md:text-xl xl:tetx-2xl text-[#fff] px-4 lg:px-[5rem] leading-[150%] lg:leading-[120%] text-center">
                 Sign up for our newsletter to receive the latest updates, insights, and exclusive Winning Stock Picks. As of 2024, our alerts are up a total of 
                  873.22%.
               </p>
             </div>
           </section>
 
-          <section className="w-full bg-[#000]">
+          <section className="w-full bg-[#000] pt-[4rem] xl:pt-[8rem] mt-[-5rem] xl:mt-[-7rem]">
             <div className="w-full xl:container py-28 xl:px-0 px-8 mx-auto flex flex-col lg:flex-row lg:justify-between border-b border-solid border-[#404040] space-y-10 lg:space-y-0">
               {/* Left Section - Sign Up */}
               <div className="w-full lg:w-[48%]">
@@ -933,24 +945,24 @@ return(
             </div>
           </section>
 
-          <footer className="w-full bg-[#000] py-12">
-            <div className="w-full xl-container mx-auto">
-              <div className="flex flex-wrap justify-between px-6 lg:px-[5rem] gap-8">
+          <footer className="bg-[#000] py-12">
+            <div className="xl:container mx-auto px-8 xl:px-4">
+              <div className="flex flex-wrap justify-between gap-8">
                 {/* Description Section */}
 
                 <div className="w-full lg:w-[45%]">
                   <Image src="/images/Logo.svg" width={100} height={100} alt="logo" className="w-[12rem] mb-8"/>
-                  <p className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular">
+                  <p className="text-[#aaa] text-base md:text-xl font-MontserratRegular">
                     Your trusted platform for live Stock Data, Stock News, IPO Calendar, 
                     AI-driven insights, Stock Picks, Alerts, and personalized analysis tools.
                   </p>
                 </div>
                 {/* Quick Links */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Quick Links
                   </h3>
-                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                  <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
                     <li><a href="">Home</a></li>
                     <li><a href="">Stockverse GPT</a></li>
                     <li><a href="">Stock Picks</a></li>
@@ -958,10 +970,10 @@ return(
                 </div>
                 {/* Market */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Market
                   </h3>
-                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                  <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
                     <li><a href="">Gainers/Losers</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">IPO Calendar</a></li>
@@ -969,20 +981,20 @@ return(
                 </div>
                 {/* Contact */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-[1rem] lg:text-[1.2rem] font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[1.8rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Contact
                   </h3>
-                  <ul className="text-[#aaa] text-[0.8rem] lg:text-[1.2rem] font-MontserratRegular flex flex-col gap-3">
+                  <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
                     <li><a href="">Email Us</a></li>
                     <li><a href="">Send Us Feedback</a></li>
                   </ul>
                 </div>
               </div>
-              <div className="flex flex-wrap items-center justify-between mt-[4rem] border-t border-[#404040] pt-[2rem] px-6 lg:px-[5rem] gap-4">
-                <p className="text-[#aaa] text-[0.9rem] lg:text-[1rem]">
+              <div className="flex flex-wrap items-center justify-between mt-[4rem] border-t border-[#404040] pt-[2rem] gap-4">
+                <p className="text-[#aaa] text-base md:text-xl">
                   © 2024 Stockverse, All rights reserved.
                 </p>
-                <ul className="text-[#aaa] text-[0.9rem] lg:text-[1rem] font-MontserratRegular flex flex-wrap">
+                <ul className="text-[#aaa] text-[0.8rem] md:text-xl font-MontserratRegular flex flex-wrap">
                   <li className="border-r-2 border-[#fafafa] pr-4">
                     <a href="">Disclaimer</a>
                   </li>
