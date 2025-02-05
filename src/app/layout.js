@@ -122,6 +122,8 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-16488126373');
           `}
         </Script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
       </head>
       <body className="bg-background w-[100%] mx-auto">

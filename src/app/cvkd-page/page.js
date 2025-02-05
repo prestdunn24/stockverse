@@ -250,7 +250,7 @@ return(
           <section className="bg-[#EF0F6AF5] py-4 px-2">
             <div className="xl:container mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
               <p className="text-[#fff] text-center md:text-left max-lg:hidden">
-                Confidential stock report by March 1st, 2025.
+              Winning Stock Picks Sent To Your Inbox
               </p>
                 {!done && (
                   <form onSubmit={handleSubscribeEmailOnly} className="w-full lg:w-[55%] flex flex-wrap items-center justify-center">
@@ -267,7 +267,7 @@ return(
                       type="submit"
                       className="px-3 py-[0.3rem] font-MontserratMedium max-sm:flex-grow bg-[#0A84EF] text-[#fff]"
                     >
-                      {loading ? 'Subscribing...' : 'Your Next Winning Stock Awaits!'}
+                      {loading ? 'Subscribing...' : 'Submit'}
                     </button>
                   </form>
                 )}
@@ -283,10 +283,10 @@ return(
           <section className="flex flex-col items-center bg-[#000000] px-2 lg:px-3 xl:px-6 bg-cvkd-bg-7 bg-no-repeat bg-[length:100%_100%] py-12 pb-[10rem] w-full text-center clippy-1">
             <div className="flex flex-col items-center xl:container mx-auto">
             <h1 className="text-[6vw] md:text-5xl xl:text-6xl 2xl:text-7xl flex items-center justify-center font-MontserratSemi text-[#ffffff] border-2 border-dashed border-[#fff] rounded-xl xl:p-6 p-4 lg:mt-8 mt-4 lg:mb-12 mb-6">
-              Hot Stock Alert: <span className="text-[#0A84EF]"> (CVKD)</span>
+              Hot Stock Alert: <span className="text-[#0A84EF] animate__animated animate__bounce animate__infinite"> (CVKD)</span>
             </h1>
-            <p className="font-MontserratMedium text-[#fff] text-lg md:text-xl  lg:text-2xl xl:text-3xl 2xl:text-4xl mb-3">
-              Nasdaq: Cadrenal Therapeutics (CVKD)
+            <p className="font-MontserratMedium text-[#fff] text-lg md:text-xl flex gap-1 lg:text-2xl xl:text-3xl 2xl:text-4xl mb-3">
+              Nasdaq: Cadrenal Therapeutics <span className="animate__animated animate__bounce animate__infinite"> (CVKD)</span>
             </p>
             <p className="font-MontserratSemi text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
               {`This $19.36 Stock May SOAR 214.73%... Here's why.`}
@@ -753,8 +753,8 @@ return(
                   <Image
                     src="/images/our-users.png"
                     alt="our users"
-                    width={100}
-                    height={100}
+                    width={452}
+                    height={612}
                     className="w-[70%] lg:w-full"
                   />
                 </div>
@@ -1074,7 +1074,7 @@ return(
             <div className="w-[2rem] h-[2rem] bg-[#EF0F6AF5] absolute right-[10%] top-[-25%] rounded-full text-[#fff] shadow flex items-center justify-center cursor-pointer" onClick={() => setIsVisible(false)}><p>&#10539;</p></div>
             <div className="xl:container mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
               <p className="text-[#fff] text-center md:text-left max-lg:hidden">
-                Confidential stock report by March 1st, 2025.
+              Winning Stock Picks Sent To Your Inbox
               </p>
                 {!done && (
                   <form onSubmit={handleSubscribeEmailOnly} className="w-full lg:w-[55%] flex flex-wrap items-center justify-center">
@@ -1091,7 +1091,7 @@ return(
                       type="submit"
                       className="px-3 py-[0.3rem] font-MontserratMedium max-sm:flex-grow bg-[#0A84EF] text-[#fff]"
                     >
-                      {loading ? 'Subscribing...' : 'Your Next Winning Stock Awaits!'}
+                      {loading ? 'Subscribing...' : 'Submit'}
                     </button>
                   </form>
                 )}
