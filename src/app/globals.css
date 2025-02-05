@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.bounce {
+  animation: bounce 3s infinite;
+}
+
 * {
   padding: 0;
   margin: 0;

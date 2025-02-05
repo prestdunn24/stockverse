@@ -283,10 +283,10 @@ return(
           <section className="flex flex-col items-center bg-[#000000] px-2 lg:px-3 xl:px-6 bg-cvkd-bg-7 bg-no-repeat bg-[length:100%_100%] py-12 pb-[10rem] w-full text-center clippy-1">
             <div className="flex flex-col items-center xl:container mx-auto">
             <h1 className="text-[6vw] md:text-5xl xl:text-6xl 2xl:text-7xl flex items-center justify-center font-MontserratSemi text-[#ffffff] border-2 border-dashed border-[#fff] rounded-xl xl:p-6 p-4 lg:mt-8 mt-4 lg:mb-12 mb-6">
-              Hot Stock Alert: <span className="text-[#0A84EF] animate__animated animate__bounce animate__infinite"> (CVKD)</span>
+              Hot Stock Alert: <span className="text-[#0A84EF] bounce"> (CVKD)</span>
             </h1>
             <p className="font-MontserratMedium text-[#fff] text-lg md:text-xl flex gap-1 lg:text-2xl xl:text-3xl 2xl:text-4xl mb-3">
-              Nasdaq: Cadrenal Therapeutics <span className="animate__animated animate__bounce animate__infinite"> (CVKD)</span>
+              Nasdaq: Cadrenal Therapeutics (CVKD)
             </p>
             <p className="font-MontserratSemi text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
               {`This $19.36 Stock May SOAR 214.73%... Here's why.`}
