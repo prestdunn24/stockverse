@@ -248,26 +248,26 @@ return(
       <>
 
           <section className="bg-[#EF0F6AF5] py-4 px-2">
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-              <p className="text-[#fff] text-center md:text-left max-md:hidden">
+            <div className="xl:container mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
+              <p className="text-[#fff] text-center md:text-left max-lg:hidden">
                 Confidential stock report by March 1st, 2025.
               </p>
                 {!done && (
-                  <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[45%] flex flex-row items-center justify-center">
+                  <form onSubmit={handleSubscribeEmailOnly} className="w-full lg:w-[55%] flex flex-wrap items-center justify-center">
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="placeholder:text-[#000] px-4 py-[0.3rem] w-[70%] font-MontserratMedium text-[#000] focus:outline-none"
+                      className="placeholder:text-[#000] px-4 py-[0.3rem] flex-grow font-MontserratMedium text-[#000] focus:outline-none"
                     />
                     <button
                       disabled={loading}
                       type="submit"
-                      className="px-3 py-[0.3rem] font-MontserratMedium bg-[#0A84EF] text-[#fff]"
+                      className="px-3 py-[0.3rem] font-MontserratMedium max-sm:flex-grow bg-[#0A84EF] text-[#fff]"
                     >
-                      {loading ? 'Subscribing...' : 'Subscribe'}
+                      {loading ? 'Subscribing...' : 'Your Next Winning Stock Awaits!'}
                     </button>
                   </form>
                 )}
@@ -562,7 +562,7 @@ return(
                   Get Winning Stock Picks Straight to Your Inbox!
                 </h1>
                 {!done && (
-                  <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[70%] mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-4">
+                  <form onSubmit={handleSubscribeEmailOnly} className="w-full flex flex-col lg:flex-row lg:items-center gap-4">
                     <input
                       type="email"
                       value={email}
@@ -1069,28 +1069,29 @@ return(
             <p className="text-base text-primaryText">The information provided in this content, including but not limited to references to Cadrenal Therapeutics (CVKD), Tecarfarin, clinical trials, market projections, and FDA approvals, is for informational purposes only. Relqo Media LLC, the owner and operator of Stockverse.com, does not guarantee the accuracy, completeness, or reliability of the information provided.</p>
           </div>
 
-          {isVisible &&           <section className="bg-[#EF0F6AF5] py-4 px-2 sticky bottom-0 z-10">
+          {isVisible &&           
+          <section className="bg-[#EF0F6AF5] py-4 px-2 sticky bottom-0 z-10">
             <div className="w-[2rem] h-[2rem] bg-[#EF0F6AF5] absolute right-[10%] top-[-25%] rounded-full text-[#fff] shadow flex items-center justify-center cursor-pointer" onClick={() => setIsVisible(false)}><p>&#10539;</p></div>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-              <p className="text-[#fff] text-center md:text-left max-md:hidden">
+            <div className="xl:container mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
+              <p className="text-[#fff] text-center md:text-left max-lg:hidden">
                 Confidential stock report by March 1st, 2025.
               </p>
                 {!done && (
-                  <form onSubmit={handleSubscribeEmailOnly} className="w-full md:w-[45%] flex flex-row items-center justify-center">
+                  <form onSubmit={handleSubscribeEmailOnly} className="w-full lg:w-[55%] flex flex-wrap items-center justify-center">
                     <input
                       type="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
                       required
-                      className="placeholder:text-[#000] px-4 py-[0.3rem] w-[70%] font-MontserratMedium text-[#000] focus:outline-none"
+                      className="placeholder:text-[#000] px-4 py-[0.3rem] flex-grow font-MontserratMedium text-[#000] focus:outline-none"
                     />
                     <button
                       disabled={loading}
                       type="submit"
-                      className="px-3 py-[0.3rem] font-MontserratMedium bg-[#0A84EF] text-[#fff]"
+                      className="px-3 py-[0.3rem] font-MontserratMedium max-sm:flex-grow bg-[#0A84EF] text-[#fff]"
                     >
-                      {loading ? 'Subscribing...' : 'Subscribe'}
+                      {loading ? 'Subscribing...' : 'Your Next Winning Stock Awaits!'}
                     </button>
                   </form>
                 )}
