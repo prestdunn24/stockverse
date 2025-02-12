@@ -98,7 +98,7 @@ const Marketing = ()=>{
             </div>
         </div>
         <div className="w-full md:w-[50%] h-[45%] max-md:h-[30%] hero-bg pt-24 pl-16">
-            <Image class="rounded-tl-lg w-full" src="/images/hero-img.jpg" width={620} height={691} alt="hero-img"/>
+            <Image class="rounded-tl-lg w-full" src="/images/hero-img.png" width={620} height={691} alt="hero-img"/>
         </div>
     </section>
 
