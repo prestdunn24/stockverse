@@ -68,7 +68,7 @@ const Contact = ()=>{
             <div className="flex flex-col justify-between max-md:w-[100%] w-[48%]">
               <h1 className="font-sansMedium xl:mb-4 2xl:text-8xl lg:text-6xl text-4xl text-[#000] leading-[120%] 2xl:pb-40 lg:pb-40 pb-20">How can Stockverse customer support help you today?</h1>
               <div>
-                <Image src="/images/contact-logos.svg" alt="" width={391} height={91}/>
+                <Image src="/images/contact-logos.svg" alt="logos" width={391} height={91}/>
               </div>
             </div>
 
