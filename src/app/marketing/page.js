@@ -107,7 +107,9 @@ const Marketing = ()=>{
         <div className="w-full xl:container mx-auto flex justify-end">
             <div className="w-[45%] max-sm:w-full">
                 <h2 className="text-[#fff] font-sansMedium 2xl:text-6xl 2xl:leading-[140%] lg:leading-[140%] leading-[140%] lg:text-5xl text-3xl 2xl:pb-48 max-md:pb-16 pb-32">A powerful way to drive growth in today’s competitive markets</h2>
-                <p className="text-[#fff] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">At PressReach, we amplify the reach of your press releases by delivering sponsored native advertising content on the Internet's top tier publisher websites.</p>
+                <p className="text-[#fff] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">
+                    {`At PressReach, we amplify the reach of your press releases by delivering sponsored native advertising content on the Internet's top tier publisher websites.`}
+                </p>
                 <Link href="" className="bg-[#ffffff] font-sansMedium text-[#111] rounded-lg px-4 py-2 text-base 2xl:text-xl">Get started for free</Link>
             </div>
         </div>
@@ -163,9 +165,12 @@ const Marketing = ()=>{
     <section className="max-md:py-6 py-20 max-md:px-3 px-3 bg-[#fafafa]">
         <div className="w-full xl:container mx-auto flex items-center justify-between max-md:flex-col max-md:gap-y-8">
             <div className="flex flex-col justify-between max-md:w-[100%] w-[48%]">
-              <h1 className="font-sansMedium xl:mb-4 2xl:text-8xl lg:text-7xl text-4xl text-[#000] leading-[120%] 2xl:pb-40 lg:pb-60 pb-20">Don't Hesitate To Contact Us</h1>
+              <h1 className="font-sansMedium xl:mb-4 2xl:text-8xl lg:text-7xl text-4xl text-[#000] leading-[120%] 2xl:pb-40 lg:pb-60 pb-20">{`Don't Hesitate To Contact Us`}</h1>
               <div>
-                <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">To capitalize on PressReach's publisher network and increase your investor exposure, complete the short form below.</p>
+                <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">
+                    {`To capitalize on PressReach's publisher network and increase your investor exposure, 
+                    complete the short form below.`}
+                </p>
                 <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl font-sansRegular">This is your chance to start reaching your best audiences with content that grabs their attention and engages them. Just complete the form below to get started.</p>
               </div>
             </div>

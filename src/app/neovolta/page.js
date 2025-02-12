@@ -252,7 +252,10 @@ const Neov = ()=>{
                     <h2 className="text-[#1D3045] font-MontserratBold text-center 2xl:text-4xl lg:text-3xl text-2xl leading-[150%] xl:leading-[150%] 2xl:leading-[150%] mb-4">Leading the Charge: New US Policies Add Spark to the Future of Solar</h2>
                     <h4 className="text-[#343D48] text-center 2xl:text-2xl lg:text-lg text-lg font-MontserratMedium md:px-28">And how one bright stock couldn’t have planned their surge at a better time.</h4>
                     <h6 className="font-MontserratBold  text-lg 2xl:text-2xl pt-8">Dear Investor,</h6>
-                    <p className="font-MontserratMedium text-base 2xl:text-2xl pt-2">We’ve seen mind boggling innovations throughout the United States, and the world over the past few decades — to the point our day-to-day lives are completely different. </p>
+                    <p className="font-MontserratMedium text-base 2xl:text-2xl pt-2">
+                      {`We’ve seen mind boggling innovations throughout the United States, and the world 
+                      over the past few decades — to the point our day-to-day lives are completely different.`}
+                      </p>
 
                     <h6 className="font-MontserratBold  text-lg 2xl:text-2xl pt-12">Today:</h6>
                     <ul className="list-disc font-MontserratMedium text-base 2xl:text-2xl pl-8 leading-[170%] pt-2 2xl:leading-[170%]">
@@ -261,13 +264,13 @@ const Neov = ()=>{
                         <li>Artificial Intelligence is used regularly to improve our lives</li>
                     </ul>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl py-12">
-                        Today’s everyday life would be nearly unrecognizable just a few decades back. 
+                        {`Today’s everyday life would be nearly unrecognizable just a few decades back. 
                         All thanks to cutting-edge technologies. And with a growing reliance on technology, 
-                        has created a dependence for consistent, and affordable energy sourcing.
+                        has created a dependence for consistent, and affordable energy sourcing.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl">
-                    … and given shifts in impending climate change and other environmental variables, 
-                    there’s been a long-standing push to evolve from conventional energy sourcing.
+                    {`… and given shifts in impending climate change and other environmental variables, 
+                    there’s been a long-standing push to evolve from conventional energy sourcing.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     The once heavily contested industry has seen a US-based Solar Generation 
@@ -316,13 +319,13 @@ const Neov = ()=>{
                     themselves faster, despite increasing upfront costs, creating a boom in home installations.
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    And thanks to 2022’s passing of the Inflation Reduction Act, and the millions in tax credits that 
+                    {`And thanks to 2022’s passing of the Inflation Reduction Act, and the millions in tax credits that 
                     came with it, we’ve seen significant improvements in baseline projections for the solar 
-                    industry for the foreseeable future. 
+                    industry for the foreseeable future. `}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    Based on SEIA’s projections, solar deployment will see a 46% boost over the next 5 years alone, 
-                    relative to pre-IRA projections.
+                    {`Based on SEIA’s projections, solar deployment will see a 46% boost over the next 5 years alone, 
+                    relative to pre-IRA projections.`}
                     </p>
                     <p className="font-MontserratBold text-base 2xl:text-2xl pt-12">
                     But the big news is in the battery systems…
@@ -341,8 +344,8 @@ const Neov = ()=>{
                     and the option to sell-back excess energy to the grid.
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    Between decreasing reliability from the grind and a growing trend of unprecedented 
-                    storms along the US’ east coast have created an added sense of urgency for homeowners. 
+                    {`Between decreasing reliability from the grind and a growing trend of unprecedented 
+                    storms along the US’ east coast have created an added sense of urgency for homeowners.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     The urgency: to have backup systems in the event of brownouts, blackouts and 
@@ -457,12 +460,12 @@ const Neov = ()=>{
                     manufacturing facility, as well as regional deployment centers around the country.
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    This low-interest loan will enable Neo-Volta to create 150+ high-paying jobs, and work in 
-                    complete compliance with 2022’s Inflation Reduction Act (IRA), ensuring domestic codification.
+                    {`This low-interest loan will enable Neo-Volta to create 150+ high-paying jobs, and work in 
+                    complete compliance with 2022’s Inflation Reduction Act (IRA), ensuring domestic codification.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     <span className="font-MontserratSemi underline">This initiative has received bipartisan support,</span> including cited optimism 
-                    from President-Elect Trump’s pro-solar energy stance. 
+                    {` from President-Elect Trump’s pro-solar energy stance.`} 
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     The result: NeoVolta received economic development offers from 23 states — offers 
@@ -486,15 +489,15 @@ const Neov = ()=>{
                     company will lead the charge?
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    The truth is, there’s no single way to look at this.
+                    {`The truth is, there’s no single way to look at this.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     The solar company(s) that go on to lead the industry will do so because of their cutting-edge 
                     batteries and technology, as well as support from local and national governmental institutions.
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    And as investors, it’s our job to consider the odds, considering what we know, and what 
-                    experts are projecting.
+                    {`And as investors, it’s our job to consider the odds, considering what we know, and what 
+                    experts are projecting.`}
                     </p>
 
                     <h2 className="text-[#1D3045] font-MontserratBold text-center 2xl:text-4xl lg:text-3xl text-2xl leading-[150%] xl:leading-[150%] 2xl:leading-[150%] mb-4 pt-8 xl:pt-20">
@@ -513,9 +516,10 @@ const Neov = ()=>{
                     standard in growth and strategic partnerships.  
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
-                    <span className="font-MontserratBold">Those accomplishments aside:</span> Regardless of the direct trajectory of the solar industry, 
+                    <span className="font-MontserratBold">Those accomplishments aside:</span>
+                    {` Regardless of the direct trajectory of the solar industry, 
                     battery systems will be at the heart of every move. And we haven't found a more promising 
-                    company or investment opportunity.
+                    company or investment opportunity.`}
                     </p>
                     <p className="font-MontserratMedium text-base 2xl:text-2xl pt-12">
                     <span className="font-MontserratBold">As the solar industry spreads throughout the country, so will NeoVolta.</span> 

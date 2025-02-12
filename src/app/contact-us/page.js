@@ -67,7 +67,7 @@ const Contact = ()=>{
             <div className="flex flex-col justify-between max-md:w-[100%] w-[48%]">
               <h1 className="font-sansMedium xl:mb-4 2xl:text-8xl lg:text-6xl text-4xl text-[#000] leading-[120%] 2xl:pb-40 lg:pb-40 pb-20">How can Stockverse customer support help you today?</h1>
               <div>
-                <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">To capitalize on PressReach's publisher network and increase your investor exposure, complete the short form below.</p>
+                <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl 2xl:pb-12 pb-6 font-sansRegular">{`To capitalize on PressReach's publisher network and increase your investor exposure, complete the short form below.`}</p>
                 <p className="text-[#111] text-lg lg:text-xl 2xl:text-2xl font-sansRegular">This is your chance to start reaching your best audiences with content that grabs their attention and engages them. Just complete the form below to get started.</p>
               </div>
             </div>
