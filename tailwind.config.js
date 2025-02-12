@@ -49,6 +49,7 @@ module.exports = {
         MontserratBold : ['Montserrat-bold'],
         MontserratMI : ['Montserrat-mi'],
         MontserratMedium : ['Montserrat-Medium'],
+        syneBold : ['syne-Bold'],
       },
       backgroundImage: {
         'heroBg': "url('/images/main_bg.webp')",

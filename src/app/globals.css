@@ -295,6 +295,11 @@
   font-display: swap;
   font-style: normal;
 }
+@font-face {
+  font-family: 'syne-Bold';
+  src: url('/fonts/syne-bold.otf') format('opentype');
+  font-weight: 700;
+}
 /* Example custom styles for scrollbar */
 .scrollbar-thin::-webkit-scrollbar {
   width: 6px;
@@ -797,5 +802,58 @@
     gap: 1rem;
     right: calc(100% - 25px) !important;
     top: 32% !important;
+  }
+}
+
+
+
+/* marketing Page css */
+
+.hero_h1{
+  background: linear-gradient(93.29deg, #190df4 40.54%, #a38cff 97.25%);
+  -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+}
+.hero-bg{
+  background: url(/images/marketing-hero-bg.jpg)no-repeat;
+  background-size: cover;
+}
+.powerful-bg{
+  background:url(/images/powerful-bg.png)no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+/* contact css */
+.contact-bg{
+  background: url(/images/contact-bg.png)no-repeat;
+  background-size: 100% 100%;
+}
+.myslide {
+  padding-left: 1rem !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+@media (max-width:1024px) {
+  .myslide {
+    padding-left: 1rem !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+}
+@media (max-width:768px) {
+  .myslide {
+    padding-left: 1rem !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+  }
+}
+@media (max-width:640px) {
+  .myslide {
+    padding-left: 1rem !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
   }
 }
