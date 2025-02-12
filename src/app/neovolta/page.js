@@ -658,7 +658,7 @@ const Neov = ()=>{
                     Thank you for all your help. Your service was excellent and very FAST.
                     </p>
                     <div className="flex items-center gap-2 mt-8">
-                        <Image className="w-[3rem]" src="/images/fiedelity.png" alt="user" width={70} height={70} />
+                        <Image className="w-[3rem]" src="/images/justin.svg" alt="justin" width={45} height={45} />
                         <div>
                         <p className="font-sansMedium text-sm 2xl:text-xl text-[#000]">
                         Cherice Justin
@@ -731,7 +731,7 @@ const Neov = ()=>{
                     to book through an agency instead of directly. Thank you
                     </p>
                     <div className="flex items-center gap-2 mt-8">
-                        <Image className="w-[3rem]" src="/images/fiedelity.png" alt="user" width={70} height={70} />
+                        <Image className="w-[3rem]" src="/images/minnie horn.png" alt="user" width={70} height={70} />
                         <div>
                         <p className="font-sansMedium text-sm 2xl:text-xl text-[#000]">
                         Veona Watson
@@ -750,7 +750,7 @@ const Neov = ()=>{
                     to book through an agency instead of directly. Thank you
                     </p>
                     <div className="flex items-center gap-2 mt-8">
-                        <Image className="w-[3rem]" src="/images/fiedelity.png" alt="user" width={70} height={70} />
+                        <Image className="w-[3rem]" src="/images/justin.svg" alt="user" width={70} height={70} />
                         <div>
                         <p className="font-sansMedium text-sm 2xl:text-xl text-[#000]">
                         Veona Watson
@@ -769,7 +769,7 @@ const Neov = ()=>{
                     to book through an agency instead of directly. Thank you
                     </p>
                     <div className="flex items-center gap-2 mt-8">
-                        <Image className="w-[3rem]" src="/images/fiedelity.png" alt="user" width={70} height={70} />
+                        <Image className="w-[3rem]" src="/images/minnie horn.png" alt="user" width={70} height={70} />
                         <div>
                         <p className="font-sansMedium text-sm 2xl:text-xl text-[#000]">
                         Veona Watson
