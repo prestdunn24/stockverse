@@ -233,8 +233,10 @@ const Neov = ()=>{
                         onChange={(e) => setEmail(e.target.value)}
                     />
                     <button type="submit" className={`bg-[#12A72E] text-xs text-[#fff] font-MontserratSemi px-6 py-4 rounded-full shadow-md hover:bg-green-700 transition absolute right-1 ${isSubmitting ? "cursor-not-allowed bg-[#649f6f]" : "bg-[#12A72E]"}`}>
+
+                     {isSubmitting ? "Subscribing..." :  <>
                      Subscribe now <span className="font-MontserratBold max-md:hidden">&#8212; FREE</span>
-            
+                     </>}
                     </button>
                      </form>
                      <div className="flex items-center gap-2 w-[80%] mt-8 relative">
