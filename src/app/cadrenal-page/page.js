@@ -13,7 +13,7 @@ import Link from "next/link";
 
 import { Mousewheel, } from 'swiper/modules';
 
-const Neov = ()=>{
+const Cadrenal = ()=>{
       const [privacyChecked, setPrivacyChecked] = useState(false);
       const [phone, setPhone] = useState(null);
       const [email, setEmail] = useState('');
@@ -22,7 +22,6 @@ const Neov = ()=>{
       const [loading, setLoading] = useState(null);
       const [stockdata, setstockData] = useState([]); // State to store API data
       const [error, setError] = useState(null); // Error state
-      const [isSubmitting, setIsSubmitting] = useState(false);
       const scrollRef = useRef(null);
       let isDown = false;
       let startX;
@@ -83,14 +82,15 @@ const Neov = ()=>{
                 price: Number(result[0].globalQuote["05. price"]),
                 price_change: Number(result[0].globalQuote["09. change"]),
             }
+            console.log(formatteddata);
             setstockData(formatteddata);
+            console.log(result[0]);
           } catch (error) {
             console.error("Error fetching data:", error);
           }
         };
     
         fetchStockData();
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
       }, []);
 
@@ -125,7 +125,6 @@ const Neov = ()=>{
       const handleSubscribeEmailOnly = async (e) => {
         setLoading(true);
         e.preventDefault();
-        setIsSubmitting(true);
         const id = "YizWSN";
         
         try {
@@ -141,10 +140,6 @@ const Neov = ()=>{
                 setEmail('');
                 setLoading(false);
                 setDone(true);
-
-                setTimeout(() => {
-                  setDone(false);
-                }, 5000);
             } else {
                 setMessage(data.message || 'Something went wrong');
                 setLoading(false);
@@ -159,9 +154,6 @@ const Neov = ()=>{
             }
             console.error('Error during subscribing:', error);
         }
-        finally {
-          setIsSubmitting(false); 
-        }
     };
 
 
@@ -170,11 +162,7 @@ const Neov = ()=>{
         <>
         {/* hero */}
         <section className="bg-[#010e140d] 2xl:py-20 xl:py-24 py-12 max-md:px-3 px-3">
-            <div className="w-full xl:container mx-auto flex justify-between max-lg:flex-col max-lg:gap-y-8">
-                <div className="w-[60%] max-md:w-[100%] max-lg:w-[100%]">
-                <h1 className="text-[#1D3045] 2xl:text-7x lg:text-5xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold">Brand New Stock Pick:</h1>
-                <h1 className="text-[#12A72E] 2xl:text-7x lg:text-5xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold pl-16 max-lg:pl-0">The better energy storage!</h1>
-                <div className="absolute max-md:static max-md:my-4 ma top-[20%] left-[49%] max-md:top-[25%] max-md:left-3 max-lg:left-[60%] max-lg:top-[10%]">
+            <div className="absolute top-[20%] left-[49%] max-md:top-[25%] max-md:left-3 max-lg:left-[60%] max-lg:top-[10%]">
             <svg className="w-15 h-15" width="80" height="80" viewBox="0 0 104 102" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="53" cy="50" r="25" fill="#12A72E"/>
                 <path d="M47 50V47.33C47 44.015 49.3475 42.6575 52.22 44.315L54.5375 45.65L56.855 46.985C59.7275 48.6425 59.7275 51.3575 56.855 53.015L54.5375 54.35L52.22 55.685C49.3475 57.3425 47 55.985 47 52.67V50Z" fill="white" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -213,15 +201,14 @@ const Neov = ()=>{
                 <path d="M9.46251 55.7496C9.49894 55.9952 9.44533 56.2174 9.30179 56.4159C9.14941 56.6167 8.93944 56.7358 8.67192 56.7739C8.4044 56.8121 8.173 56.7561 7.97758 56.605C7.7823 56.4548 7.66644 56.2569 7.63002 56.0112C7.59498 55.775 7.64995 55.5622 7.79464 55.3711C7.9382 55.1726 8.14361 55.0532 8.41112 55.015C8.67864 54.9768 8.91462 55.0331 9.11885 55.1821C9.31299 55.3248 9.42748 55.5133 9.46251 55.7496Z" fill="#4B698D"/>
             </svg>
             </div>
-                <p className="text-[#343d4899] font-MontserratMedium xl:text-base text-lg w-[80%] max-md:w-full pt-4">Breaking: Dec, 2nd 2024, BigStocks Reveals Top Energy Storage Stock Pick with Huge Potential! Subscribe Now For Updates!</p>
+            <div className="w-full xl:container mx-auto flex justify-between max-lg:flex-col max-lg:gap-y-8">
+                <div className="w-[60%] max-md:w-[100%] max-lg:w-[100%]">
+                <h1 className="text-[#1D3045] 2xl:text-7x lg:text-5xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold">Brand New Stock Pick:</h1>
+                <h1 className="text-[#12A72E] 2xl:text-7x lg:text-5xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold pl-16 max-lg:pl-0">The better energy storage!</h1>
+                <p className="text-[#343d4899] font-MontserratMedium xl:text-base text-lg w-[80%] max-md:w-full pt-4 max-md:pt-28">Breaking: Dec, 2nd 2024, BigStocks Reveals Top Energy Storage Stock Pick with Huge Potential! Subscribe Now For Updates!</p>
                 </div>
                 <div className="w-[35%] max-md:w-[100%] max-lg:w-[50%]">
                     <div>
-                    {done && (
-                    <div className="w-full bg-[#12a72e] absolute left-0 top-16 p-2 px-4 text-center text-base font-sansMedium text-[#fff]">
-                      Thanks For Subscribing.
-                    </div>
-                  )}
                      <form className="flex items-center justify-between w-full relative" onSubmit={handleSubscribeEmailOnly}>
                         <FaRegEnvelope className="absolute left-4 text-[#424A5D]"/>
                      <input
@@ -232,9 +219,9 @@ const Neov = ()=>{
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
-                    <button type="submit" className={`bg-[#12A72E] text-xs text-[#fff] font-MontserratSemi px-6 py-4 rounded-full shadow-md hover:bg-green-700 transition absolute right-1 ${isSubmitting ? "cursor-not-allowed bg-[#649f6f]" : "bg-[#12A72E]"}`}>
-                     Subscribe now <span className="font-MontserratBold max-md:hidden">&#8212; FREE</span>
-            
+                    <button type="submit" className="bg-[#12A72E] text-xs text-[#fff] font-MontserratSemi px-6 py-4 rounded-full shadow-md hover:bg-green-700 transition absolute right-1">
+                     {!done &&(<p>Subscribe now <span className="font-MontserratBold max-md:hidden">&#8212; FREE</span></p>)}
+                     {done && (<p>Subscribed</p>)}
                     </button>
                      </form>
                      <div className="flex items-center gap-2 w-[80%] mt-8 relative">
@@ -1100,6 +1087,6 @@ const Neov = ()=>{
     )
 }
 
-export default Neov;
+export default Cadrenal;
 
 
