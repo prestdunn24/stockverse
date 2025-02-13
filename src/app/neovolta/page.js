@@ -135,8 +135,8 @@ const Neov = ()=>{
         <section className="bg-[#010e140d] 2xl:py-20 xl:py-24 py-12 max-md:px-3 px-3">
             <div className="w-full xl:container mx-auto flex justify-between max-lg:flex-col max-lg:gap-y-8">
                 <div className="w-[60%] max-md:w-[100%] max-lg:w-[100%]">
-                <h1 className="text-[#1D3045] 2xl:text-6xl lg:text-5xl text-[2rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold">Brand New Stock Pick:</h1>
-                <h1 className="text-[#12A72E] 2xl:text-6xl lg:text-5xl text-[2rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold pl-16 max-lg:pl-0">The better energy storage!</h1>
+                <h1 className="text-[#1D3045] 2xl:text-4xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold">This ${stockdata.price} Stock May SOAR 345.58%</h1>
+                <h1 className="text-[#12A72E] 2xl:text-4xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold pl-16 max-lg:pl-0">NEOV: The Better Energy Storage!</h1>
                 <p className="text-[#343d4899] font-MontserratMedium 2xl:text-xl xl:text-base text-lg 2xl:w-full w-[80%] max-md:w-full pt-4">Breaking: Dec, 2nd 2024, BigStocks Reveals Top Energy Storage Stock Pick with Huge Potential! Subscribe Now For Updates!</p>
                 </div>
                 <div className="w-[35%] max-md:w-[100%] max-lg:w-[50%] md:mt-12">
@@ -304,11 +304,7 @@ const Neov = ()=>{
                     weather-related power outages.
                     </p>
                     <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
-                    That’s why manufacturers are racing to produce the 
-                    <span className="underline">
-                    most secure and durable 
-                    battery systems with the highest nominal capacities.
-                    </span> 
+                    That’s why manufacturers are racing to produce the <span className="underline"> most secure and durable battery systems with the highest nominal capacities.</span> 
                     </p>
                     <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
                     Yet, in a sea of competition, one company has clearly stood out as the brightest.
@@ -358,8 +354,7 @@ const Neov = ()=>{
                     </p>
                     <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
                     As the President and General Manager at Meyer Burger Americas, Johnson oversaw a 
-                    $1,000,000,000 backlog and 
-                    <span className="underline">scaled manufacturing to 2 gigawatts annually within just 90 days.</span>
+                    $1,000,000,000 backlog and <span className="underline"> scaled manufacturing to 2 gigawatts annually within just 90 days.</span>
                     </p>
                     <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
                     With his experience with said solar giants, many believe Johnson will have a 
@@ -489,15 +484,15 @@ const Neov = ()=>{
                     we believe NeoVolta is, without a doubt, the solar stock to consider adding to your portfolio 
                     for 2025.
                     </p>
-                    <p className="font-MontserratRegular text-base 2xl:text-xl pt-2 text-[#343D48]">
-                    Consider joining our membership too.
-                    </p>
-                    <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
+                    <Link href='/register' className="font-MontserratRegular text-base 2xl:text-xl pt-2 text-[#0000FF] underline">
+                      Consider Registering to our platform.
+                    </Link>
+                    {/* <p className="font-MontserratRegular text-base 2xl:text-xl pt-12 text-[#343D48]">
                     Happy investing,
                     </p>
                     <p className="font-MontserratRegular text-base 2xl:text-xl pt-2 text-[#343D48]">
                     -Joe w/ Bigstocks
-                    </p>
+                    </p> */}
                 </div>
                 <div className="w-[22%] max-lg:w-[48%] max-md:w-[48%] max-md:w-full border-2 border-[#DDE9EF] p-2 rounded-md 2xl:rounded-xl sticky top-12 max-lg:order-1 max-lg:relative max-lg:top-0">
                     <p className="bg-[#F2F3F3] font-MontserratSemibold lg:text-sm 2xl:text-base text-base px-4 py-4 rounded 2xl:rounded-lg">
