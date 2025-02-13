@@ -282,13 +282,13 @@ return(
           {/* hero section */}
           <section className="flex flex-col items-center bg-[#000000] px-2 lg:px-3 xl:px-6 bg-cvkd-bg-7 bg-no-repeat bg-[length:100%_100%] py-12 pb-[10rem] w-full text-center clippy-1">
             <div className="flex flex-col items-center xl:container mx-auto">
-            <h1 className="text-[6vw] md:text-5xl xl:text-6xl 2xl:text-7xl flex items-center justify-center font-MontserratSemi text-[#ffffff] border-2 border-dashed border-[#fff] rounded-xl xl:p-6 p-4 lg:mt-8 mt-4 lg:mb-12 mb-6">
+            <h1 className="text-[6vw] md:text-5xl xl:text-6xl 2xl:text-7xl flex items-center justify-center font-MontserratSemibold text-[#ffffff] border-2 border-dashed border-[#fff] rounded-xl xl:p-6 p-4 lg:mt-8 mt-4 lg:mb-12 mb-6">
               Hot Stock Alert: <span className="text-[#0A84EF] bounce"> (CVKD)</span>
             </h1>
             <p className="font-MontserratMedium text-[#fff] text-lg md:text-xl flex gap-1 lg:text-2xl xl:text-3xl 2xl:text-4xl mb-3">
               Nasdaq: Cadrenal Therapeutics (CVKD)
             </p>
-            <p className="font-MontserratSemi text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
+            <p className="font-MontserratSemibold text-2xl  lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#fff] mb-12">
               {`This $19.36 Stock May SOAR 214.73%... Here's why.`}
             </p>
 
@@ -423,12 +423,12 @@ return(
 
           <section className="flex flex-col md:flex-row bg-[#000] bg-custom-gradient-2 md:bg-custom-gradient bg-cover bg-top-right bg-no-repeat">
             <div className="w-full xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
-              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemibold mb-8 2xl:mb-12">
                 Strong Clinical Backing <br />and Upcoming Catalysts
               </h1>
               <div>
                 <ul className="list-disc space-y-4 text-[#fff] w-full xl:w-[80%]">
-                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -441,7 +441,7 @@ return(
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[3rem] md:pr-[10rem] pl-[2rem] pb-[1rem]">
                     CVKD’s Tecarfarin is heading to Phase 3, where positive results could validate its effectiveness.
                   </p>
-                  <li className="flex items-center gap-2 text-xl 2xl:text-3xl md:text-2xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl 2xl:text-3xl md:text-2xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -462,12 +462,12 @@ return(
           <section className="bg-[#000] bg-cvkd-bg-1sm lg:bg-cvkd-bg-1 bg-[length:100%_50%] sm:bg-[length:86%_100%] md:bg-[length:80%_100%] lg:bg-[length:67%_100%] bg-left-bottom bg-no-repeat">
             <div className="xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8 flex flex-col md:flex-row justify-end">
             <div className="w-full md:w-[60%] text-end">
-              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemibold mb-8 2xl:mb-12">
                 Unstoppable Cardiovascular Revolution
               </h1>
               <div>
                 <ul className="list-disc space-y-4 text-[#fff] w-full text-end">
-                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
+                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -480,7 +480,7 @@ return(
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pl-[2rem] pb-[1rem]">
                     CVKD’s Tecarfarin isn’t just better—it’s the future, leaving competitors like warfarin in the dust.
                   </p>
-                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
+                  <li className="flex justify-end items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -502,12 +502,12 @@ return(
           <section className="bg-[#000]">
             <div className="flex flex-col lg:flex-row xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
             <div className="w-full lg:w-[50%]">
-              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemibold mb-8 2xl:mb-12">
                 Unrivaled Market Opportunity
               </h1>
               <div>
                 <ul className="list-disc space-y-4 text-[#fff] w-full">
-                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -520,7 +520,7 @@ return(
                   <p className="text-base md:text-xl 2xl:text-2xl font-MontserratRegular text-[#AAAAAA] pr-[0rem] md:pr-[0rem] pl-[2rem] pb-[1rem]">
                     Tecarfarin is positioned to enter a significant $2 billion market, presenting a notable opportunity for growth and market impact.
                   </p>
-                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemi">
+                  <li className="flex items-center gap-2 text-xl md:text-2xl 2xl:text-3xl font-MontserratSemibold">
                     <Image
                       src="/images/tick.png"
                       alt="tick"
@@ -558,7 +558,7 @@ return(
               {/* Right Content Section */}
               <div className="w-full md:w-[55%] py-8 md:py-16 px-6 md:pr-8 flex flex-col gap-6 text-center md:text-left">
                 <p className="font-MontserrarMI text-[#fff]">&#8213; Alert!</p>
-                <h1 className="text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+                <h1 className="text-3xl lg:text-4xl 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemibold mb-8 2xl:mb-12">
                   Get Winning Stock Picks Straight to Your Inbox!
                 </h1>
                 {!done && (
@@ -590,7 +590,7 @@ return(
 
           <section className="bg-cvkd-bg-3">
             <div className="xl:container mx-auto 2xl:py-40 xl:py-20 py-16 xl:px-4 px-8">
-              <h1 className="text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemi mb-8 2xl:mb-12">
+              <h1 className="text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl leading-[110%] font-semibold font-MontserratSemibold mb-8 2xl:mb-12">
                 Why Cadrenal Therapeutics is a Must-Watch Opportunity
               </h1>
               <p className="text-center text-[#aaa] font-MontserratRegular px-6 lg:px-[5rem] text-base md:text-xl xl:text-2xl pt-2">
@@ -693,8 +693,8 @@ return(
 
           <section className='bg-[#000] pt-8 pb-[12rem] bg-cvkd-bg-5'>
             <div className="xl:container mx-auto 2xl:py-30 xl:py-20 py-8 px-8 xl:px-4">
-              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemi xl:mb-4'>CEO Discusses the Groundbreaking Potential</h1>
-              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemi'>of Tecarfarin for Cadrenal Therapeutics (CVKD)</h1>
+              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemibold xl:mb-4'>CEO Discusses the Groundbreaking Potential</h1>
+              <h1 className='text-[#fff] text-3xl lg:text-4xl text-center 2xl:text-6xl font-semibold font-MontserratSemibold'>of Tecarfarin for Cadrenal Therapeutics (CVKD)</h1>
             </div>
           </section>
 
@@ -711,7 +711,7 @@ return(
               {/* <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratBold text-center mb-6 lg:mb-[2.5rem]">
                 Aligned with industry giants like Abbott
               </h1>
-              <h4 className="text-center font-MontserratSemi text-xl lg:text-2xl 2xl:text-3xl mb-4 lg:mb-[1rem]">
+              <h4 className="text-center font-MontserratSemibold text-xl lg:text-2xl 2xl:text-3xl mb-4 lg:mb-[1rem]">
                 Reasons to Consider CVKD
               </h4>
               <p className="text-[#474747] text-center text-base md:text-xl xl:text-2xl leading-[1.5] px-4 lg:px-[8rem]">
@@ -744,7 +744,7 @@ return(
 
           <section>
             <div className="xl:container mx-auto xl:px-4 px-8 2xl:py-20 py-10 flex flex-col items-center justify-center py-10">
-              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratSemi text-center mb-6 lg:mb-[2.5rem]">
+              <h1 className="text-3xl lg:text-4xl 2xl:text-6xl font-MontserratSemibold text-center mb-6 lg:mb-[2.5rem]">
                 What Our Users Are Saying
               </h1>
               <div className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-8 lg:gap-0">
@@ -778,7 +778,7 @@ return(
                               {testimonial.feedback}
                               <span className="text-[3rem] lg:text-[4rem] text-[#0A84EF] absolute bottom-[-1rem] right-[-1rem] lg:bottom-[-2rem] lg:right-[0%]">&#10078;</span>
                             </p>
-                            <h4 className="text-[1.2rem] lg:text-[1.4rem] font-MontserratSemi">{testimonial.name}</h4>
+                            <h4 className="text-[1.2rem] lg:text-[1.4rem] font-MontserratSemibold">{testimonial.name}</h4>
                             <p className="text-[1.2rem] lg:text-[1.5rem] text-[#474747]">{testimonial.position}</p>
                           </div>
                         </div>
@@ -796,7 +796,7 @@ return(
               <p className="font-MontserrarMedium l text-center text-[#fff]">
                 &#8213; Join StockVerse Alerts Today!
               </p>
-              <h1 className="text-[1.5rem] lg:text-[3.2rem] font-MontserratSemi leading-[130%] lg:leading-[120%] pb-4 lg:pb-6 text-center text-[#fff]">
+              <h1 className="text-[1.5rem] lg:text-[3.2rem] font-MontserratSemibold leading-[130%] lg:leading-[120%] pb-4 lg:pb-6 text-center text-[#fff]">
                 Winning Stock Picks Sent To Inbox
               </h1>
               <p className="font-MontserratRegular text-base md:text-xl xl:tetx-2xl text-[#fff] px-4 lg:px-[5rem] leading-[150%] lg:leading-[120%] text-center">
@@ -870,11 +870,11 @@ return(
                       <p className="text-xs text-[#96A0B5] font-MontserratRegular">
                         By submitting this form and signing up for texts, you consent to receive marketing text messages (e.g., promos, cart reminders)
                         from Relqo Media at the number provided, including messages sent by autodialer. Consent is not a condition of purchase. Msg & data rates may apply. Msg frequency varies. Unsubscribe at any time by replying STOP or clicking the unsubscribe link (where available).{" "}
-                        <a href="/policy" className="text-[#0A84EF] text-[0.8rem] underline font-MontserratSemi">
+                        <a href="/policy" className="text-[#0A84EF] text-[0.8rem] underline font-MontserratSemibold">
                           Privacy Policy
                         </a>{" "}
                         &{" "}
-                        <a href="/terms" className="text-[#0A84EF] text-[0.8rem] font-MontserratSemi underline">
+                        <a href="/terms" className="text-[#0A84EF] text-[0.8rem] font-MontserratSemibold underline">
                           Terms
                         </a>
                         .
@@ -900,7 +900,7 @@ return(
                 {/* Offices */}
                 <div className="flex flex-col lg:flex-row lg:justify-between pb-[3rem] mb-[2rem] border-b border-[#404040] space-y-10 lg:space-y-0">
                   <div className="lg:text-left w-full lg:w-[48%]">
-                    <p className="font-MontserratSemi text-[1.5rem] text-[#fff] flex items-center gap-3 pb-2 lg:justify-start">
+                    <p className="font-MontserratSemibold text-[1.5rem] text-[#fff] flex items-center gap-3 pb-2 lg:justify-start">
                       <Image
                         src="/images/american-flag.png"
                         alt="american-flag"
@@ -922,7 +922,7 @@ return(
                     </p>
                   </div>
                   <div className="w-full lg:w-[48%]">
-                    <h4 className="font-MontserratSemi text-[1.5rem] text-[#fff] flex items-center gap-3 pb-2">Inquiries</h4>
+                    <h4 className="font-MontserratSemibold text-[1.5rem] text-[#fff] flex items-center gap-3 pb-2">Inquiries</h4>
                     <p className="text-gray-400 text-sm mb-6 flex item-center gap-2">
                     <FaEnvelope size={20} color="#c0c0c0" />
                       <a href="mailto:support@stockverse.com" className="text-[#aaa] font-MontserratRegular text-[1rem] pb-2 underline">
@@ -973,7 +973,7 @@ return(
                 </div>
                 {/* Quick Links */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemibold mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Quick Links
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
@@ -984,7 +984,7 @@ return(
                 </div>
                 {/* Market */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemibold mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Market
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">
@@ -995,7 +995,7 @@ return(
                 </div>
                 {/* Contact */}
                 <div className="w-[45%] sm:w-[30%] lg:w-[15%]">
-                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemi mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
+                  <h3 className="text-[#fff] text-xl md:text-2xl font-MontserratSemibold mb-8 relative after:content-[''] after:absolute after:left-0 after:top-[2.2rem] after:w-[3rem] after:h-[2px] after:bg-[#2175D9]">
                     Contact
                   </h3>
                   <ul className="text-[#aaa] text-base md:text-xl font-MontserratRegular flex flex-col gap-3">

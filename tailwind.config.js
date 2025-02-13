@@ -44,7 +44,7 @@ module.exports = {
         sansSemiboldItalic: ['GeneralSans-SemiboldItalic', 'sans-serif'],
         sansVariable: ['GeneralSans-Variable', 'sans-serif'],
         sansVariableItalic: ['GeneralSans-VariableItalic', 'sans-serif'],
-        MontserratSemi : ['Montserrat-semi'],
+        MontserratSemibold : ['Montserrat-semibold'],
         MontserratRegular : ['Montserrat-regular'],
         MontserratBold : ['Montserrat-bold'],
         MontserratMI : ['Montserrat-mi'],
