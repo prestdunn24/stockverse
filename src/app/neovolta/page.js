@@ -135,9 +135,9 @@ const Neov = ()=>{
         <section className="bg-[#010e140d] 2xl:py-20 xl:py-24 py-12 max-md:px-3 px-3">
             <div className="w-full xl:container mx-auto flex justify-between max-lg:flex-col max-lg:gap-y-8">
                 <div className="w-[60%] max-md:w-[100%] max-lg:w-[100%]">
-                <h1 className="text-[#1D3045] 2xl:text-4xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold">This ${stockdata.price} Stock May SOAR 345.58%</h1>
-                <h1 className="text-[#12A72E] 2xl:text-4xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-syneBold pl-16 max-lg:pl-0">NEOV: The Better Energy Storage!</h1>
-                <p className="text-[#343d4899] font-MontserratMedium 2xl:text-xl xl:text-base text-lg 2xl:w-full w-[80%] max-md:w-full pt-4">Breaking: Dec, 2nd 2024, BigStocks Reveals Top Energy Storage Stock Pick with Huge Potential! Subscribe Now For Updates!</p>
+                <h1 className="text-[#1D3045] 2xl:text-5xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-sansSemibold">This  ${stockdata.price} Stock May SOAR 345.58%</h1>
+                <h1 className="text-[#12A72E] 2xl:text-5xl lg:text-3xl text-[1.5rem] 2xl:leading-[150%] xl:leading-[150%] leading-[150%] font-sansSemibold pl-16 max-lg:pl-0">NEOV: The Better Energy Storage!</h1>
+                <p className="text-[#343d4899] font-MontserratMedium 2xl:text-xl xl:text-base text-lg 2xl:w-full w-[80%] max-md:w-full pt-4">Breaking: Feb, 2025, Stockverse Reveals Top Energy Storage Stock Pick with Huge Potential! Subscribe Now For Updates!</p>
                 </div>
                 <div className="w-[35%] max-md:w-[100%] max-lg:w-[50%] md:mt-12">
                     <div>
