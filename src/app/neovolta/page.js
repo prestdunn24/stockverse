@@ -31,19 +31,26 @@ const Neov = ()=>{
 
     const STOCKVERSE_BACK_END = process.env.NEXT_PUBLIC_STOCKVERSE_BACK_END;
 
-
-      const handleSubscribeEmailPhone = async (e) => {
+    const handleSubscribeEmailPhone = async (e) => {
         setLoading(true);
         e.preventDefault();
-        const id = "YizWSN";
-        
+        const id = "Y4nSkL";
+        const baseId = "VSwpYs";
+
         try {
-          const response = await axios.post(`${STOCKVERSE_BACK_END}/klaviyo-subscription`, {
+            const requestData = {
                 id,
+                baseId,
                 email,
-                phone: `+${phone}`,
-            });
-      
+            };
+
+            // Only add the phone number if it is provided
+            if (phone) {
+                requestData.phone = `+${phone}`;
+            }
+
+            const response = await axios.post(`${STOCKVERSE_BACK_END}/klaviyo-subscription`, requestData);
+
             const data = response.data;
             console.log(data);
             if (response.status === 200) {
@@ -64,7 +71,8 @@ const Neov = ()=>{
             }
             console.error('Error during subscribing:', error);
         }
-      };
+    };
+
 
       useEffect(() => {
         const fetchStockData = async () => {
@@ -118,51 +126,6 @@ const Neov = ()=>{
         const walk = (x - startX) * 2; // Adjust speed
         scrollRef.current.scrollLeft = scrollLeft - walk;
       };
-    
-
-
-
-      const handleSubscribeEmailOnly = async (e) => {
-        setLoading(true);
-        e.preventDefault();
-        setIsSubmitting(true);
-        const id = "YizWSN";
-        
-        try {
-          const response = await axios.post(`${STOCKVERSE_BACK_END}/klaviyo-subscription`, {
-                id,
-                email,
-            });
-    
-            const data = response.data;
-            console.log(data);
-            if (response.status === 200) {
-                setMessage(data.message);
-                setEmail('');
-                setLoading(false);
-                setDone(true);
-
-                setTimeout(() => {
-                  setDone(false);
-                }, 5000);
-            } else {
-                setMessage(data.message || 'Something went wrong');
-                setLoading(false);
-            }
-        } catch (error) {
-            if (error.response && error.response.data) {
-                setMessage(error.response.data.message || 'Something went wrong');
-                setLoading(false);
-            } else {
-                setMessage('An error occurred. Please try again.');
-                setLoading(false);
-            }
-            console.error('Error during subscribing:', error);
-        }
-        finally {
-          setIsSubmitting(false); 
-        }
-    };
 
 
 
@@ -183,7 +146,7 @@ const Neov = ()=>{
                       Thanks For Subscribing.
                     </div>
                   )}
-                     <form className="flex items-center justify-between w-full relative" onSubmit={handleSubscribeEmailOnly}>
+                     <form className="flex items-center justify-between w-full relative" onSubmit={handleSubscribeEmailPhone}>
                         <FaRegEnvelope className="absolute left-4 text-[#424A5D]"/>
                      <input
                         name="search_Symbols"

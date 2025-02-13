@@ -92,7 +92,7 @@ export default function LogIn() {
         const authToken = response.data.token;
         console.log(authToken);
         if (authToken) {
-          Cookies.set('authToken', authToken, { expires: 6 / 24 });
+          Cookies.set('authToken', authToken, { expires: 1 });
         }
         // Redirect to dashboard after successful login
         router.push('/');
