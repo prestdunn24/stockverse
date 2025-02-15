@@ -2,11 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Head from 'next/head';
-import Disclaimer from "@/components/Disclaimer";
+import Disclaimer from "@/components/Article_disclaimer";
 
 const Noev = () => {
 
-    const pressReleaseUrl = `https://stockverse.com/articles/neov`; // The current URL
+    const pressReleaseUrl = `https://stockverse.com/articles/bright-stock-neov-nasdaq-surge-timing`; // The current URL
 
     const handleFacebookShare = () => {
         const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(pressReleaseUrl)}`;
